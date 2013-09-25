@@ -4,35 +4,12 @@
  */
 package org.ralasafe.servlet;
 
-import java.io.IOException;
-import java.io.StringReader;
-
-import javax.servlet.ServletException;
-import javax.servlet.ServletOutputStream;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
+import com.google.gson.Gson;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.ralasafe.EntityExistException;
 import org.ralasafe.RalasafeException;
-import org.ralasafe.db.sql.xml.BinaryExpression;
-import org.ralasafe.db.sql.xml.Column;
-import org.ralasafe.db.sql.xml.ContextValue;
-import org.ralasafe.db.sql.xml.ExpressionGroupTypeItem;
-import org.ralasafe.db.sql.xml.InExpression;
-import org.ralasafe.db.sql.xml.IsNotNullExpression;
-import org.ralasafe.db.sql.xml.IsNullExpression;
-import org.ralasafe.db.sql.xml.NotInExpression;
-import org.ralasafe.db.sql.xml.Operand;
-import org.ralasafe.db.sql.xml.Operand1;
-import org.ralasafe.db.sql.xml.Operand2;
-import org.ralasafe.db.sql.xml.Operator;
-import org.ralasafe.db.sql.xml.QueryType;
-import org.ralasafe.db.sql.xml.SimpleValue;
-import org.ralasafe.db.sql.xml.Table;
-import org.ralasafe.db.sql.xml.UserValue;
-import org.ralasafe.db.sql.xml.Value;
+import org.ralasafe.db.sql.xml.*;
 import org.ralasafe.db.sql.xml.types.QueryTypeTypeType;
 import org.ralasafe.db.sql.xml.types.SimpleOperatorType;
 import org.ralasafe.db.sql.xml.types.SimpleValueTypeTypeType;
@@ -40,7 +17,12 @@ import org.ralasafe.entitle.Query;
 import org.ralasafe.entitle.QueryManager;
 import org.ralasafe.util.StringUtil;
 
-import com.google.gson.Gson;
+import javax.servlet.ServletException;
+import javax.servlet.ServletOutputStream;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.io.StringReader;
 
 public class QueryDesignAction extends Action {
 	private static final Log log=LogFactory.getLog( QueryDesignAction.class );

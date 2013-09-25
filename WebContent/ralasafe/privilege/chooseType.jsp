@@ -6,23 +6,21 @@
 %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@page import="java.util.Collection"%>
-<%@page import="java.util.Iterator"%>
 <%@page import="org.ralasafe.privilege.Privilege"%>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">  
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<link rel="shortcut icon" href="../favicon.ico"> 
-<link rel="stylesheet" type="text/css" media="screen" href="../css/ralasafe.css" />
-<link rel="stylesheet" type="text/css" media="screen" href="../css/flick/jquery-ui-1.8.5.custom.css" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/ralasafe.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/flick/jquery-ui-1.8.5.custom.css"/>
 
-<script src="../js/jquery.js" type="text/javascript"></script>
-<script src="../js/jquery-ui-1.8.5.custom.js" type="text/javascript"></script>
+    <script src="../js/jquery.js" type="text/javascript"></script>
+    <script src="../js/jquery-ui-1.8.5.custom.js" type="text/javascript"></script>
 
-<%
+        <%
 org.ralasafe.util.I18N i18n=org.ralasafe.util.I18N.getWebInstance( request );
 Privilege pvlg=(Privilege)request.getAttribute( "privilege" );
 

@@ -4,6 +4,9 @@
  */
 package org.ralasafe.encrypt;
 
+/**
+ * 加密类
+ */
 public interface Encrypt {
 	/**
 	 * Encrypt some text

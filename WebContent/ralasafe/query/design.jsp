@@ -6,8 +6,8 @@
 %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@page import="org.ralasafe.db.sql.xml.QueryType"%>
 <%@page import="org.ralasafe.servlet.QueryDesignHandler"%>
-<%@page import="org.ralasafe.db.sql.xml.QueryType"%>    
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 
 <html>

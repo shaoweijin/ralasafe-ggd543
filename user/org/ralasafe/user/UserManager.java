@@ -4,39 +4,25 @@
  */
 package org.ralasafe.user;
 
-import java.io.StringReader;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
-
 import org.ralasafe.EntityExistException;
 import org.ralasafe.Factory;
 import org.ralasafe.adapter.user.UserComplexTableAdapter;
 import org.ralasafe.application.Application;
 import org.ralasafe.db.Column;
-import org.ralasafe.db.DBLevelException;
-import org.ralasafe.db.MapStorageObjectNewer;
-import org.ralasafe.db.MapStorgeColumnAdapter;
-import org.ralasafe.db.MapStorgeObject;
+import org.ralasafe.db.*;
 import org.ralasafe.db.Table;
 import org.ralasafe.db.impl.ComplexTableDeletorImpl;
 import org.ralasafe.db.impl.ComplexTableSaverImpl;
 import org.ralasafe.db.impl.ComplexTableSelectorImpl;
 import org.ralasafe.db.impl.ComplexTableUpdatorImpl;
-import org.ralasafe.db.sql.BinaryExpression;
-import org.ralasafe.db.sql.ExpressionGroup;
-import org.ralasafe.db.sql.Operator;
-import org.ralasafe.db.sql.Query;
-import org.ralasafe.db.sql.QueryFactory;
-import org.ralasafe.db.sql.SimpleOperator;
-import org.ralasafe.db.sql.SimpleValue;
+import org.ralasafe.db.sql.*;
 import org.ralasafe.metadata.user.FieldMetadata;
 import org.ralasafe.privilege.UserRoleManager;
-import org.ralasafe.user.User;
 import org.ralasafe.userType.UserType;
 import org.ralasafe.util.StringUtil;
+
+import java.io.StringReader;
+import java.util.*;
 
 public class UserManager {
 	private UserType userType;

@@ -6,10 +6,10 @@
 %>
 <%@ page language="java" contentType="text/html; charset=utf-8"
 	pageEncoding="utf-8"%>
-<%@page import="java.util.Collection"%>
-<%@page import="java.util.Iterator,java.text.SimpleDateFormat"%>
-<%@page import="org.ralasafe.demo.LoanMoney"%>
 <%@page import="org.ralasafe.WebRalasafe"%>
+<%@page import="org.ralasafe.demo.LoanMoney,java.text.SimpleDateFormat"%>
+<%@page import="java.util.Collection"%>
+<%@page import="java.util.Iterator"%>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>

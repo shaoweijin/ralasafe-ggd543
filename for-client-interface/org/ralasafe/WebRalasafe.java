@@ -4,18 +4,16 @@
  */
 package org.ralasafe;
 
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.Map;
-
-import javax.servlet.http.HttpServletRequest;
-
 import org.ralasafe.entitle.CustomizedWhere;
 import org.ralasafe.entitle.Decision;
 import org.ralasafe.entitle.QueryResult;
 import org.ralasafe.privilege.Privilege;
-import org.ralasafe.privilege.UserRoleManager;
 import org.ralasafe.user.User;
+
+import javax.servlet.http.HttpServletRequest;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Ralasafe Web Service.

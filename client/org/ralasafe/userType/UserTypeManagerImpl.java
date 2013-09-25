@@ -4,17 +4,6 @@
  */
 package org.ralasafe.userType;
 
-import java.io.ByteArrayInputStream;
-import java.io.FileReader;
-import java.sql.Connection;
-import java.sql.SQLException;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.Set;
-
 import org.apache.commons.lang.StringUtils;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -23,15 +12,7 @@ import org.ralasafe.Factory;
 import org.ralasafe.RalasafeException;
 import org.ralasafe.application.Application;
 import org.ralasafe.application.ApplicationUserType;
-import org.ralasafe.db.DBLevelException;
-import org.ralasafe.db.DBPower;
-import org.ralasafe.db.FieldWhereElement;
-import org.ralasafe.db.JavaBeanColumnAdapter;
-import org.ralasafe.db.JavaBeanObjectNewer;
-import org.ralasafe.db.SingleValueComparator;
-import org.ralasafe.db.Table;
-import org.ralasafe.db.TableNewer;
-import org.ralasafe.db.TableUpdator;
+import org.ralasafe.db.*;
 import org.ralasafe.db.impl.TableDeletorImpl;
 import org.ralasafe.db.impl.TableSaverImpl;
 import org.ralasafe.db.impl.TableSelectorImpl;
@@ -40,6 +21,12 @@ import org.ralasafe.metadata.user.UserMetadata;
 import org.ralasafe.metadata.user.UserMetadataParser;
 import org.ralasafe.util.DBUtil;
 import org.ralasafe.util.StringUtil;
+
+import java.io.ByteArrayInputStream;
+import java.io.FileReader;
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.util.*;
 
 public class UserTypeManagerImpl implements UserTypeManager {
 	private static Log logger=LogFactory.getLog( UserTypeManagerImpl.class );

@@ -4,10 +4,10 @@
  */
 package org.ralasafe.servlet;
 
-import javax.servlet.http.HttpServletRequest;
-
 import org.ralasafe.entitle.UserCategory;
 import org.ralasafe.entitle.UserCategoryManager;
+
+import javax.servlet.http.HttpServletRequest;
 
 public class UserCategoryPolicyAction extends AbstractPolicyAction {
 	//private static final Log log=LogFactory.getLog( UserCategoryPolicyServlet.class );

@@ -4,13 +4,12 @@
  */
 package org.ralasafe.metadata.user;
 
+import org.ralasafe.db.DBPower;
+import org.ralasafe.util.StringUtil;
+
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
-
-
-import org.ralasafe.db.DBPower;
-import org.ralasafe.util.StringUtil;
 
 public class UserMetadata {
 	private TableMetadata mainTableMetadata;

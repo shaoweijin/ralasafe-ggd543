@@ -4,19 +4,7 @@
  */
 package org.ralasafe.adapter.user;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-
-import org.ralasafe.db.ComplexTable;
-import org.ralasafe.db.DBPower;
-import org.ralasafe.db.MapStorageObjectNewer;
-import org.ralasafe.db.MapStorgeColumnAdapter;
-import org.ralasafe.db.MapStorgeObject;
-import org.ralasafe.db.MultiValueTableAdapter;
-import org.ralasafe.db.SingleValueTableAdapter;
-import org.ralasafe.db.Table;
-import org.ralasafe.db.TableNewer;
+import org.ralasafe.db.*;
 import org.ralasafe.db.impl.ComplexTableDeletorImpl;
 import org.ralasafe.db.impl.ComplexTableSaverImpl;
 import org.ralasafe.db.impl.ComplexTableSelectorImpl;
@@ -26,6 +14,10 @@ import org.ralasafe.metadata.user.TableMetadata;
 import org.ralasafe.metadata.user.UserMetadata;
 import org.ralasafe.user.User;
 import org.ralasafe.util.Util;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 
 public class UserComplexTableAdapter {
 	private UserMetadata userMetadata;

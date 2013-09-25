@@ -4,10 +4,9 @@
  */
 package org.ralasafe.util;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.Locale;
 import java.util.ResourceBundle;
-
-import javax.servlet.http.HttpServletRequest;
 
 public class I18N {
 	private ResourceBundle rb;

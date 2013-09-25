@@ -4,6 +4,13 @@
  */
 package org.ralasafe.db.impl;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+import org.ralasafe.ObjectNewer;
+import org.ralasafe.db.*;
+import org.ralasafe.util.DBUtil;
+import org.ralasafe.util.Util;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
@@ -12,24 +19,6 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Map.Entry;
-
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
-import org.ralasafe.ObjectNewer;
-import org.ralasafe.db.Column;
-import org.ralasafe.db.ComplexTable;
-import org.ralasafe.db.ComplexTableDBHelper;
-import org.ralasafe.db.ComplexTableSelector;
-import org.ralasafe.db.ComplexTableValueCombiner;
-import org.ralasafe.db.DBLevelException;
-import org.ralasafe.db.InnerWhereElement;
-import org.ralasafe.db.MultiValueTableAdapter;
-import org.ralasafe.db.SelectCondition;
-import org.ralasafe.db.SelectConditionUtil;
-import org.ralasafe.db.SingleValueTableAdapter;
-import org.ralasafe.db.Table;
-import org.ralasafe.util.DBUtil;
-import org.ralasafe.util.Util;
 
 public class ComplexTableSelectorImpl implements ComplexTableSelector {
 	private ComplexTable complexTable;

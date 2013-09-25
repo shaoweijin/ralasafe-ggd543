@@ -4,9 +4,9 @@
  */
 package org.ralasafe.servlet;
 
-import javax.servlet.http.HttpServletRequest;
-
 import org.ralasafe.entitle.QueryManager;
+
+import javax.servlet.http.HttpServletRequest;
 
 public class QueryMngAction  extends AbstractTreeAction{
 	public AbstractTreeHandler createTreeHandler(HttpServletRequest req){

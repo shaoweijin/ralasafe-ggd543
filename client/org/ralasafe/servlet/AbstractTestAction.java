@@ -4,17 +4,16 @@
  */
 package org.ralasafe.servlet;
 
+import org.ralasafe.user.User;
+import org.ralasafe.user.UserManager;
+import org.ralasafe.util.Util;
+
+import javax.servlet.http.HttpServletRequest;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.text.ParseException;
 import java.util.HashMap;
 import java.util.Map;
-
-import javax.servlet.http.HttpServletRequest;
-
-import org.ralasafe.user.User;
-import org.ralasafe.user.UserManager;
-import org.ralasafe.util.Util;
 
 public abstract class AbstractTestAction extends Action {
 	public Map buildTestContext( HttpServletRequest req,

@@ -4,10 +4,6 @@
  */
 package org.ralasafe.servlet;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.Map;
-
 import org.ralasafe.EntityExistException;
 import org.ralasafe.db.sql.Query;
 import org.ralasafe.db.sql.QueryFactory;
@@ -18,6 +14,10 @@ import org.ralasafe.entitle.QueryManager;
 import org.ralasafe.entitle.QueryResult;
 import org.ralasafe.user.User;
 import org.ralasafe.util.Util;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.Map;
 
 public class QueryTestHandler {
 

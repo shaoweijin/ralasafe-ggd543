@@ -4,14 +4,14 @@
  */
 package org.ralasafe.db.sql;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Map;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.ralasafe.RalasafeException;
 import org.ralasafe.user.User;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Map;
 
 public class SimpleValue implements Value {
 	private static Log log=LogFactory.getLog( SimpleValue.class );

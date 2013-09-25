@@ -5,14 +5,7 @@
 package org.ralasafe.servlet;
 
 import org.ralasafe.EntityExistException;
-import org.ralasafe.db.sql.xml.Column;
-import org.ralasafe.db.sql.xml.ContextValue;
-import org.ralasafe.db.sql.xml.Parameter;
-import org.ralasafe.db.sql.xml.Query;
-import org.ralasafe.db.sql.xml.QueryType;
-import org.ralasafe.db.sql.xml.RawSQL;
-import org.ralasafe.db.sql.xml.Select;
-import org.ralasafe.db.sql.xml.UserValue;
+import org.ralasafe.db.sql.xml.*;
 import org.ralasafe.entitle.QueryManager;
 import org.ralasafe.util.StringUtil;
 import org.ralasafe.util.Util;

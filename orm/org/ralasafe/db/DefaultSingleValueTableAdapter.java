@@ -5,9 +5,6 @@
 package org.ralasafe.db;
 
 import org.ralasafe.ObjectNewer;
-import org.ralasafe.db.MapStorageObjectNewer;
-import org.ralasafe.db.MapStorgeObject;
-import org.ralasafe.db.SingleValueTableAdapter;
 
 public class DefaultSingleValueTableAdapter implements SingleValueTableAdapter {
 	private String mapKey;

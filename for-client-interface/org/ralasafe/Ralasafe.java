@@ -4,11 +4,6 @@
  */
 package org.ralasafe;
 
-import java.util.HashMap;
-import java.util.Locale;
-import java.util.Map;
-
-import org.ralasafe.SystemConstant;
 import org.ralasafe.entitle.CustomizedWhere;
 import org.ralasafe.entitle.Decision;
 import org.ralasafe.entitle.EntitleManager;
@@ -16,6 +11,10 @@ import org.ralasafe.entitle.QueryResult;
 import org.ralasafe.privilege.Privilege;
 import org.ralasafe.privilege.UserRoleManager;
 import org.ralasafe.user.User;
+
+import java.util.HashMap;
+import java.util.Locale;
+import java.util.Map;
 
 /**
  * Ralasafe Service.

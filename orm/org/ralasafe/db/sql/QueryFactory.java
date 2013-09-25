@@ -4,19 +4,15 @@
  */
 package org.ralasafe.db.sql;
 
-import java.util.ArrayList;
-import java.util.Collection;
-
 import org.ralasafe.RalasafeException;
-import org.ralasafe.db.DBPower;
-import org.ralasafe.db.JavaBeanColumnAdapter;
-import org.ralasafe.db.JavaBeanObjectNewer;
-import org.ralasafe.db.MapStorageObjectNewer;
-import org.ralasafe.db.MapStorgeColumnAdapter;
+import org.ralasafe.db.*;
 import org.ralasafe.db.sql.xml.Operand1;
 import org.ralasafe.db.sql.xml.Operand2;
 import org.ralasafe.db.sql.xml.types.SimpleOperatorType;
 import org.ralasafe.util.StringUtil;
+
+import java.util.ArrayList;
+import java.util.Collection;
 
 public class QueryFactory {
 	public static Query getQuery(org.ralasafe.db.sql.xml.QueryType xmlQuery) {

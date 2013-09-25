@@ -1,7 +1,6 @@
 package org.ralasafe.entitle;
 
 import junit.framework.TestCase;
-
 import org.ralasafe.StartService;
 import org.ralasafe.user.User;
 

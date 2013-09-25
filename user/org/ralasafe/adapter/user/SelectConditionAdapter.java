@@ -4,26 +4,13 @@
  */
 package org.ralasafe.adapter.user;
 
-import java.util.HashMap;
-import java.util.Map;
-
-import org.ralasafe.db.Column;
-import org.ralasafe.db.ColumnAdapter;
-import org.ralasafe.db.Comparator;
-import org.ralasafe.db.ComplexWhereElement;
-import org.ralasafe.db.FieldWhereElement;
-import org.ralasafe.db.GroupPart;
-import org.ralasafe.db.LWhereElement;
-import org.ralasafe.db.MapStorgeColumnAdapter;
-import org.ralasafe.db.NoValueComparator;
-import org.ralasafe.db.OrderPart;
-import org.ralasafe.db.SelectCondition;
-import org.ralasafe.db.SingleValueComparator;
-import org.ralasafe.db.Type;
-import org.ralasafe.db.WhereElement;
+import org.ralasafe.db.*;
 import org.ralasafe.metadata.user.FieldMetadata;
 import org.ralasafe.metadata.user.UserMetadata;
 import org.ralasafe.user.UserSelectCondition;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class SelectConditionAdapter {
 	private Map columnMap;

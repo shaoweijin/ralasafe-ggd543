@@ -6,10 +6,10 @@
 %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ page import="org.ralasafe.group.Node" %>
+<%@ page import="org.ralasafe.entitle.BusinessData" %>
 <%@page import="org.ralasafe.entitle.Query"%>
-<%@page import="org.ralasafe.entitle.BusinessData"%>
 <%@page import="org.ralasafe.entitle.UserCategory"%>
+<%@page import="org.ralasafe.group.Node"%>
 <%
 org.ralasafe.util.I18N i18n=org.ralasafe.util.I18N.getWebInstance( request );
 String id=request.getParameter("id");

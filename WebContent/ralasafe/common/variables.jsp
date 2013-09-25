@@ -8,7 +8,6 @@
     pageEncoding="UTF-8"%>
 <%@ page import="org.ralasafe.db.sql.xml.DefineVariable" %>
 <%@ page import="org.ralasafe.servlet.AbstractPolicyDesignHandler" %>
-<%@ page import="org.ralasafe.db.sql.xml.ContextValue" %>
 
 <%
 org.ralasafe.util.I18N i18n=org.ralasafe.util.I18N.getWebInstance( request );

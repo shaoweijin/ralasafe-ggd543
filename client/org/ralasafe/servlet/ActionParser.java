@@ -1,24 +1,23 @@
 package org.ralasafe.servlet;
 
-import java.io.IOException;
-import java.util.HashMap;
-import java.util.Map;
-
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
-
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 public class ActionParser {
 	private static final String URL_PATTERN="url-pattern";
 	private static final String ACTION_NAME="action-name";
 	private static final String ACTION_MAPPING="action-mapping";
 
-	public Map parse( String path ) {		
+	public static Map parse( String path ) {
 		DocumentBuilderFactory fcty = DocumentBuilderFactory.newInstance();
 		Document document = null;
 		try {
@@ -40,7 +39,7 @@ public class ActionParser {
 		return parse( rootEmt );
 	}
 
-	private Map parse( Element rootEmt ) {
+	private static Map parse( Element rootEmt ) {
 		Map result=new HashMap();
 		
 		NodeList nodeList=rootEmt.getElementsByTagName( ACTION_MAPPING );
@@ -51,7 +50,7 @@ public class ActionParser {
 			String url=item.getElementsByTagName( URL_PATTERN ).item( 0 ).getTextContent();
 			
 			result.put( url, actionName );
-		}		
+        }
 
 		return result;
 	}

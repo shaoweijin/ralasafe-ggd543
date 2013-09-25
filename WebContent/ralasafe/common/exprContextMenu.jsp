@@ -6,8 +6,8 @@
 %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@page import="org.ralasafe.db.sql.xml.ExprGroupTypeItem"%>
 <%@page import="org.ralasafe.db.sql.xml.ExprGroup"%>
+<%@page import="org.ralasafe.db.sql.xml.ExprGroupTypeItem"%>
     
 <%
 org.ralasafe.util.I18N i18n=org.ralasafe.util.I18N.getWebInstance( request );

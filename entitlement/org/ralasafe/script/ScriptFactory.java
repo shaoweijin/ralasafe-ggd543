@@ -4,11 +4,11 @@
  */
 package org.ralasafe.script;
 
-import java.util.ArrayList;
-
 import org.ralasafe.RalasafeException;
 import org.ralasafe.db.sql.xml.types.SimpleOperatorType;
 import org.ralasafe.entitle.QueryManager;
+
+import java.util.ArrayList;
 
 public class ScriptFactory {
 	public static UserCategory getUserCategory(

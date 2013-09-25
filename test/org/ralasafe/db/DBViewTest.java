@@ -1,11 +1,10 @@
 package org.ralasafe.db;
 
+import junit.framework.TestCase;
+import org.ralasafe.StartService;
+
 import java.util.HashSet;
 import java.util.Set;
-
-import junit.framework.TestCase;
-
-import org.ralasafe.StartService;
 
 public class DBViewTest extends TestCase {
 	public void setUp() throws Exception {

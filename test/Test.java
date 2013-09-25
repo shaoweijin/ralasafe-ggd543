@@ -1,6 +1,6 @@
-import java.lang.reflect.InvocationTargetException;
-
 import org.ralasafe.demo.LoanMoney;
+
+import java.lang.reflect.InvocationTargetException;
 
 
 public class Test {

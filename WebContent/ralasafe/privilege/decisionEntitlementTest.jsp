@@ -6,11 +6,11 @@
 %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@page import="org.ralasafe.entitle.DecisionEntitlement"%>
+<%@page import="org.ralasafe.privilege.Privilege"%>
+<%@page import="org.ralasafe.servlet.DecisionEntitlementHandler"%>
 <%@page import="java.util.Collection"%>
 <%@page import="java.util.Iterator"%>
-<%@page import="org.ralasafe.servlet.DecisionEntitlementHandler"%>
-<%@page import="org.ralasafe.privilege.Privilege"%>
-<%@page import="org.ralasafe.entitle.DecisionEntitlement"%>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">  
 

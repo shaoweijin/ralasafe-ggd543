@@ -4,10 +4,10 @@
  */
 package org.ralasafe.db;
 
+import org.ralasafe.ObjectNewer;
+
 import java.sql.Connection;
 import java.util.Collection;
-
-import org.ralasafe.ObjectNewer;
 
 /**
  * WARNING!!! We will change this API later, to use org.ralasafe.db.sql class instead.

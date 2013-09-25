@@ -4,20 +4,20 @@
  */
 package org.ralasafe.servlet;
 
-import java.util.HashMap;
-import java.util.Map;
-
 import org.ralasafe.EntityExistException;
 import org.ralasafe.SystemConstant;
-import org.ralasafe.db.sql.xml.DefineVariable;
-import org.ralasafe.db.sql.xml.ExprGroup;
 import org.ralasafe.db.sql.xml.BusinessData;
 import org.ralasafe.db.sql.xml.BusinessDataType;
-import org.ralasafe.entitle.ScriptTestResult;
+import org.ralasafe.db.sql.xml.DefineVariable;
+import org.ralasafe.db.sql.xml.ExprGroup;
 import org.ralasafe.entitle.BusinessDataManager;
+import org.ralasafe.entitle.ScriptTestResult;
 import org.ralasafe.script.AbstractPolicy;
 import org.ralasafe.script.ScriptFactory;
 import org.ralasafe.user.User;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class BusinessDataPolicyDesignHandler extends AbstractPolicyDesignHandler {
 	private final BusinessDataManager manager;

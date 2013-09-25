@@ -4,29 +4,21 @@
  */
 package org.ralasafe.servlet;
 
-import java.io.IOException;
-
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.ralasafe.EntityExistException;
 import org.ralasafe.RalasafeException;
 import org.ralasafe.SystemConstant;
-import org.ralasafe.db.sql.xml.ContextValue;
-import org.ralasafe.db.sql.xml.DefineVariable;
-import org.ralasafe.db.sql.xml.Formula;
-import org.ralasafe.db.sql.xml.HintValue;
-import org.ralasafe.db.sql.xml.QueryRef;
-import org.ralasafe.db.sql.xml.SimpleValue;
-import org.ralasafe.db.sql.xml.UserValue;
-import org.ralasafe.db.sql.xml.Variable;
+import org.ralasafe.db.sql.xml.*;
 import org.ralasafe.db.sql.xml.types.FormulaTypeOperatorType;
 import org.ralasafe.db.sql.xml.types.FormulaTypeTypeType;
 import org.ralasafe.db.sql.xml.types.SimpleValueTypeTypeType;
 import org.ralasafe.entitle.QueryManager;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 
 public abstract class AbstractPolicyRawAction extends Action {
 	private static final Log log=LogFactory.getLog( AbstractPolicyRawAction.class );

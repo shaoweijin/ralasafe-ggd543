@@ -4,24 +4,6 @@
  */
 package org.ralasafe.util;
 
-import java.io.StringReader;
-import java.lang.reflect.Field;
-import java.lang.reflect.Method;
-import java.text.MessageFormat;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Locale;
-import java.util.Map;
-import java.util.ResourceBundle;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.exolab.castor.xml.MarshalException;
@@ -32,6 +14,14 @@ import org.ralasafe.db.sql.Value;
 import org.ralasafe.db.sql.xml.DefineVariable;
 import org.ralasafe.db.sql.xml.Query;
 import org.ralasafe.entitle.QueryManager;
+
+import java.io.StringReader;
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
+import java.text.MessageFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.*;
 
 public class Util {
 	private static final Log log=LogFactory.getLog( Util.class );

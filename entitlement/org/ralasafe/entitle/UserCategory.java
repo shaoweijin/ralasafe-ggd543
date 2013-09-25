@@ -4,11 +4,11 @@
  */
 package org.ralasafe.entitle;
 
-import java.util.Date;
-import java.util.Map;
-
 import org.ralasafe.group.Node;
 import org.ralasafe.user.User;
+
+import java.util.Date;
+import java.util.Map;
 
 /**
  * UserCategory. Id is pk, name and leaf fields are unqiue fields.

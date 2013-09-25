@@ -4,10 +4,10 @@
  */
 package org.ralasafe.privilege;
 
+import org.ralasafe.EntityExistException;
+
 import java.util.Collection;
 import java.util.Locale;
-
-import org.ralasafe.EntityExistException;
 
 public interface RoleManager {
 

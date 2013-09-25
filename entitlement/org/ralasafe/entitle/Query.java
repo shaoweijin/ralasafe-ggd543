@@ -4,32 +4,14 @@
  */
 package org.ralasafe.entitle;
 
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Date;
-import java.util.Iterator;
-import java.util.Map;
-
 import org.ralasafe.RalasafeException;
-import org.ralasafe.db.sql.BinaryExpression;
-import org.ralasafe.db.sql.Column;
-import org.ralasafe.db.sql.ExpressionGroup;
-import org.ralasafe.db.sql.Operand;
-import org.ralasafe.db.sql.Operator;
-import org.ralasafe.db.sql.OrderBy;
-import org.ralasafe.db.sql.SimpleOperator;
-import org.ralasafe.db.sql.SimpleValue;
-import org.ralasafe.entitle.CustomizedWhere.EqualCondition;
-import org.ralasafe.entitle.CustomizedWhere.GreaterEqualCondition;
-import org.ralasafe.entitle.CustomizedWhere.GreaterThanCondition;
-import org.ralasafe.entitle.CustomizedWhere.LessEqualCondition;
-import org.ralasafe.entitle.CustomizedWhere.LessThanCondition;
-import org.ralasafe.entitle.CustomizedWhere.LikeCondition;
-import org.ralasafe.entitle.CustomizedWhere.NotEqualCondition;
-import org.ralasafe.entitle.CustomizedWhere.OrderByCondition;
+import org.ralasafe.db.sql.*;
+import org.ralasafe.entitle.CustomizedWhere.*;
 import org.ralasafe.group.Node;
 import org.ralasafe.user.User;
+
+import java.text.SimpleDateFormat;
+import java.util.*;
 
 public class Query extends Node {
 	public final static int RESERVED_QUERY_ID = -10;

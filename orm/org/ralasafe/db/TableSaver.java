@@ -4,10 +4,10 @@
  */
 package org.ralasafe.db;
 
+import org.ralasafe.EntityExistException;
+
 import java.sql.Connection;
 import java.util.Collection;
-
-import org.ralasafe.EntityExistException;
 
 /**
  * Save entity operation to database.

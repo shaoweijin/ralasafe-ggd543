@@ -4,13 +4,12 @@
  */
 package org.ralasafe.servlet;
 
-import java.io.StringReader;
-
-import javax.servlet.http.HttpServletRequest;
-
 import org.ralasafe.RalasafeException;
 import org.ralasafe.entitle.UserCategory;
 import org.ralasafe.entitle.UserCategoryManager;
+
+import javax.servlet.http.HttpServletRequest;
+import java.io.StringReader;
 
 public class UserCategoryPolicyRawAction extends AbstractPolicyRawAction {
 	

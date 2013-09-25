@@ -4,11 +4,11 @@
  */
 package org.ralasafe.application;
 
-import java.util.Collection;
-import java.util.Locale;
-
 import org.ralasafe.EntityExistException;
 import org.ralasafe.userType.UserType;
+
+import java.util.Collection;
+import java.util.Locale;
 
 public interface ApplicationManager {
 

@@ -4,19 +4,6 @@
  */
 package org.ralasafe.db.sql;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.ralasafe.SystemConstant;
@@ -27,6 +14,13 @@ import org.ralasafe.entitle.QueryResult;
 import org.ralasafe.entitle.QueryTestResult;
 import org.ralasafe.user.User;
 import org.ralasafe.util.DBUtil;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.text.SimpleDateFormat;
+import java.util.*;
 
 public class Query implements Operand, LeftOfIn, RightOfIn, SQLElement {
 	private static Log log=LogFactory.getLog( Query.class );

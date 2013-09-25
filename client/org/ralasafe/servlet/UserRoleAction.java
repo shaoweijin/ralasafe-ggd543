@@ -4,16 +4,6 @@
  */
 package org.ralasafe.servlet;
 
-import java.io.IOException;
-import java.util.Collection;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.Set;
-
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.ralasafe.privilege.Role;
@@ -23,6 +13,15 @@ import org.ralasafe.user.User;
 import org.ralasafe.user.UserManager;
 import org.ralasafe.util.StringUtil;
 import org.ralasafe.util.Util;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.util.Collection;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
 
 public class UserRoleAction extends Action {
 	private static final Log log=LogFactory.getLog( UserRoleAction.class );

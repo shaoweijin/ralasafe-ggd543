@@ -6,10 +6,10 @@
 %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@page import="org.ralasafe.util.Util"%>
-<%@page import="java.util.Collection"%>    
 <%@page import="org.ralasafe.entitle.QueryResult"%>
 <%@page import="org.ralasafe.servlet.QueryTestHandler"%>
+<%@page import="org.ralasafe.util.Util"%>
+<%@page import="java.util.Collection"%>
 
 <%
 org.ralasafe.util.I18N i18n=org.ralasafe.util.I18N.getWebInstance( request );

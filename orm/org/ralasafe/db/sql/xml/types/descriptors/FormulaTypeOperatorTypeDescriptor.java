@@ -15,8 +15,6 @@ package org.ralasafe.db.sql.xml.types.descriptors;
  //- Imported classes and packages -/
 //---------------------------------/
 
-import org.ralasafe.db.sql.xml.types.FormulaTypeOperatorType;
-
 /**
  * Class FormulaTypeOperatorTypeDescriptor.
  * 

@@ -4,10 +4,9 @@
  */
 package org.ralasafe.db;
 
-import java.util.Properties;
-
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
+import java.util.Properties;
 
 /**
  * <code>DataSource</code> jndi's implement.

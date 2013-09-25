@@ -4,27 +4,12 @@
  */
 package org.ralasafe.privilege;
 
-import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Iterator;
-import java.util.Locale;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.ralasafe.EntityExistException;
 import org.ralasafe.Factory;
 import org.ralasafe.ResourceConstants;
-import org.ralasafe.db.DBLevelException;
-import org.ralasafe.db.DBPower;
-import org.ralasafe.db.FieldWhereElement;
-import org.ralasafe.db.JavaBeanColumnAdapter;
-import org.ralasafe.db.JavaBeanObjectNewer;
-import org.ralasafe.db.SelectCondition;
-import org.ralasafe.db.SingleValueComparator;
-import org.ralasafe.db.Table;
-import org.ralasafe.db.TableNewer;
-import org.ralasafe.db.TableUpdator;
+import org.ralasafe.db.*;
 import org.ralasafe.db.impl.TableDeletorImpl;
 import org.ralasafe.db.impl.TableSaverImpl;
 import org.ralasafe.db.impl.TableSelectorImpl;
@@ -33,6 +18,12 @@ import org.ralasafe.entitle.UserCategoryManager;
 import org.ralasafe.userType.UserType;
 import org.ralasafe.util.DBUtil;
 import org.ralasafe.util.Util;
+
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.Locale;
 
 public class RoleManagerImpl implements RoleManager {
 	private static final Log log=LogFactory.getLog( RoleManagerImpl.class );

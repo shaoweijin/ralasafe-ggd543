@@ -4,48 +4,18 @@
  */
 package org.ralasafe.servlet;
 
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-
 import org.ralasafe.EntityExistException;
-import org.ralasafe.db.ColumnView;
-import org.ralasafe.db.DBLevelException;
-import org.ralasafe.db.DBPower;
-import org.ralasafe.db.DBView;
-import org.ralasafe.db.TableView;
-import org.ralasafe.db.sql.xml.BinaryExpression;
+import org.ralasafe.db.*;
+import org.ralasafe.db.sql.xml.*;
 import org.ralasafe.db.sql.xml.Column;
-import org.ralasafe.db.sql.xml.ContextValue;
-import org.ralasafe.db.sql.xml.ExpressionGroup;
-import org.ralasafe.db.sql.xml.ExpressionGroupTypeItem;
-import org.ralasafe.db.sql.xml.GroupBy;
-import org.ralasafe.db.sql.xml.InExpression;
-import org.ralasafe.db.sql.xml.IsNotNullExpression;
-import org.ralasafe.db.sql.xml.IsNullExpression;
-import org.ralasafe.db.sql.xml.LeftOfIn;
-import org.ralasafe.db.sql.xml.NotInExpression;
-import org.ralasafe.db.sql.xml.Operand;
-import org.ralasafe.db.sql.xml.OrderBy;
-import org.ralasafe.db.sql.xml.Query;
-import org.ralasafe.db.sql.xml.QueryType;
-import org.ralasafe.db.sql.xml.QueryTypeSequence;
-import org.ralasafe.db.sql.xml.RightOfIn;
-import org.ralasafe.db.sql.xml.Select;
-import org.ralasafe.db.sql.xml.SimpleValue;
 import org.ralasafe.db.sql.xml.Table;
-import org.ralasafe.db.sql.xml.UserValue;
-import org.ralasafe.db.sql.xml.Value;
 import org.ralasafe.db.sql.xml.types.ColumnTypeOrderType;
 import org.ralasafe.db.sql.xml.types.LinkerType;
 import org.ralasafe.entitle.QueryManager;
 import org.ralasafe.util.StringUtil;
 import org.ralasafe.util.Util;
+
+import java.util.*;
 
 public class QueryDesignHandler {
 	private QueryType query;

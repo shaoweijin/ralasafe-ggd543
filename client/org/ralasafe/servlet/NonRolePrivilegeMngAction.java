@@ -4,9 +4,9 @@
  */
 package org.ralasafe.servlet;
 
-import javax.servlet.http.HttpServletRequest;
-
 import org.ralasafe.privilege.PrivilegeManager;
+
+import javax.servlet.http.HttpServletRequest;
 
 public class NonRolePrivilegeMngAction extends AbstractTreeAction{
 

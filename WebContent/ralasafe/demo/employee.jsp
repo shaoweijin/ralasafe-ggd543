@@ -6,9 +6,9 @@
 %>
 <%@ page language="java" contentType="text/html; charset=utf-8"
 	pageEncoding="utf-8"%>
-<%@page import="java.util.Collection"%>
-<%@page import="java.util.Iterator,java.text.SimpleDateFormat"%>
-<%@page	import="org.ralasafe.demo.Employee,org.ralasafe.demo.Privilege,org.ralasafe.demo.Company,org.ralasafe.WebRalasafe"%>
+<%@page import="org.ralasafe.WebRalasafe"%>
+<%@page import="org.ralasafe.demo.Company,org.ralasafe.demo.Employee"%>
+<%@page	import="org.ralasafe.demo.Privilege,java.text.SimpleDateFormat,java.util.Collection,java.util.Iterator"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
 

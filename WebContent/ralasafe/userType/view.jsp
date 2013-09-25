@@ -6,9 +6,8 @@
 %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@page import="java.util.Collection,java.util.Iterator"%>    
+<%@page import="org.ralasafe.metadata.user.*,org.ralasafe.userType.UserType"%>
 <%@page import="org.ralasafe.util.I18N"%>
-<%@page import="org.ralasafe.userType.UserType,org.ralasafe.metadata.user.*;"%>
 
 <%
 I18N i18n=I18N.getWebInstance( request );

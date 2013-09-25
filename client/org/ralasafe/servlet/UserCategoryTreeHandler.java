@@ -4,15 +4,14 @@
  */
 package org.ralasafe.servlet;
 
-import java.util.Collection;
-import java.util.Iterator;
-
-import javax.servlet.http.HttpServletRequest;
-
 import org.ralasafe.EntityExistException;
 import org.ralasafe.entitle.UserCategory;
 import org.ralasafe.entitle.UserCategoryManager;
 import org.ralasafe.group.Node;
+
+import javax.servlet.http.HttpServletRequest;
+import java.util.Collection;
+import java.util.Iterator;
 
 public class UserCategoryTreeHandler extends AbstractTreeHandler {	
 	private final UserCategoryManager manager;

@@ -4,14 +4,6 @@
  */
 package org.ralasafe.servlet;
 
-import java.io.IOException;
-import java.util.Collection;
-
-import javax.servlet.RequestDispatcher;
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
 import org.ralasafe.Factory;
 import org.ralasafe.WebConstants;
 import org.ralasafe.application.Application;
@@ -29,6 +21,13 @@ import org.ralasafe.user.UserManager;
 import org.ralasafe.userType.UserType;
 import org.ralasafe.userType.UserTypeManager;
 import org.ralasafe.util.StringUtil;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.util.Collection;
 
 /**
  * For web util. Including methods for getting UserType, ApplicationManager,

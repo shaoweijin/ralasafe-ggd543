@@ -4,13 +4,13 @@
  */
 package org.ralasafe.entitle;
 
+import org.ralasafe.EntityExistException;
+import org.ralasafe.user.User;
+
 import java.util.Collection;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
-
-import org.ralasafe.EntityExistException;
-import org.ralasafe.user.User;
 
 public interface EntitleManager {
 

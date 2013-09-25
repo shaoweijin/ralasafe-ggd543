@@ -4,14 +4,14 @@
  */
 package org.ralasafe.db.sql;
 
-import java.lang.reflect.Method;
-import java.util.Map;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.ralasafe.RalasafeException;
 import org.ralasafe.db.MapStorgeObject;
 import org.ralasafe.user.User;
+
+import java.lang.reflect.Method;
+import java.util.Map;
 
 public class HintValue implements Value {
 	private static Log log=LogFactory.getLog( HintValue.class );

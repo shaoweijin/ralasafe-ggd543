@@ -4,14 +4,14 @@
  */
 package org.ralasafe.db;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+import org.ralasafe.RalasafeException;
+
 import java.lang.reflect.Method;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
-import org.ralasafe.RalasafeException;
 
 /**
  * Mapping a javabean to query result. This adapter adapters resultset to javabean.

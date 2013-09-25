@@ -7,16 +7,15 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
 	pageEncoding="utf-8"%>
 
-<%@page import="org.ralasafe.user.User"%>
+<%@page import="org.ralasafe.WebRalasafe"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
-<%@page import="java.util.Random"%>
-<%@page import="org.ralasafe.WebRalasafe"%>
 <%@page import="org.ralasafe.demo.Privilege"%>
 <%@page import="java.util.Locale"%>
-<%@page import="org.ralasafe.demo.DemoUtil"%><html>
+<%@page import="java.util.Random"%>
+<html>
 <head>
-<%
+    <%
 	Locale locale = request.getLocale();
 %>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">

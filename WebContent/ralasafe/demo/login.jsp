@@ -11,9 +11,10 @@
 <%@page import="org.ralasafe.util.StringUtil"%>
 <%@page import="java.net.URLDecoder"%>
 <%@page import="java.util.Locale"%>
-<%@page import="org.ralasafe.demo.DemoUtil"%><html>
+<html>
+
 <head>
-<%
+    <%
 	Locale locale = request.getLocale();
 %>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">

@@ -4,11 +4,11 @@
  */
 package org.ralasafe.entitle;
 
-import java.util.Date;
-import java.util.Map;
-
 import org.ralasafe.group.Node;
 import org.ralasafe.user.User;
+
+import java.util.Date;
+import java.util.Map;
 
 public class BusinessData extends Node {
 	private String name;

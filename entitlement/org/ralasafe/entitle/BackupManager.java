@@ -4,10 +4,10 @@
  */
 package org.ralasafe.entitle;
 
+import org.ralasafe.EntityExistException;
+
 import java.io.OutputStream;
 import java.util.Collection;
-
-import org.ralasafe.EntityExistException;
 
 public interface BackupManager {
 	public Backup addBackup(Backup backup) throws EntityExistException;

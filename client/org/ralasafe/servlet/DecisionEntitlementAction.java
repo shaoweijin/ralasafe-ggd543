@@ -4,25 +4,18 @@
  */
 package org.ralasafe.servlet;
 
-import java.io.IOException;
-import java.util.Collection;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+import org.ralasafe.EntityExistException;
+import org.ralasafe.entitle.*;
+import org.ralasafe.privilege.Privilege;
+import org.ralasafe.privilege.PrivilegeManager;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
-import org.ralasafe.EntityExistException;
-import org.ralasafe.entitle.BusinessData;
-import org.ralasafe.entitle.BusinessDataManager;
-import org.ralasafe.entitle.DecisionEntitlement;
-import org.ralasafe.entitle.EntitleManager;
-import org.ralasafe.entitle.QueryManager;
-import org.ralasafe.entitle.UserCategory;
-import org.ralasafe.entitle.UserCategoryManager;
-import org.ralasafe.privilege.Privilege;
-import org.ralasafe.privilege.PrivilegeManager;
+import java.io.IOException;
+import java.util.Collection;
 
 public class DecisionEntitlementAction extends Action {
 	private static final Log log=LogFactory.getLog( DecisionEntitlementAction.class );

@@ -15,8 +15,6 @@ package org.ralasafe.db.sql.xml.descriptors;
  //- Imported classes and packages -/
 //---------------------------------/
 
-import org.ralasafe.db.sql.xml.Variable2;
-
 /**
  * Class Variable2Descriptor.
  * 

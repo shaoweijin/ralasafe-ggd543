@@ -4,12 +4,12 @@
  */
 package org.ralasafe.db;
 
+import org.ralasafe.util.DBUtil;
+import org.ralasafe.util.StringUtil;
+
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
-
-import org.ralasafe.util.DBUtil;
-import org.ralasafe.util.StringUtil;
 
 /**
  * WARNING!!!!

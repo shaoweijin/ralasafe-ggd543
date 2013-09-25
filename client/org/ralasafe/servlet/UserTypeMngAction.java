@@ -4,13 +4,6 @@
  */
 package org.ralasafe.servlet;
 
-import java.io.IOException;
-import java.util.Collection;
-
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
 import org.ralasafe.Factory;
 import org.ralasafe.RalasafeException;
 import org.ralasafe.ResourceConstants;
@@ -20,6 +13,12 @@ import org.ralasafe.privilege.Privilege;
 import org.ralasafe.userType.UserType;
 import org.ralasafe.userType.UserTypeManager;
 import org.ralasafe.util.Util;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.util.Collection;
 
 
 public class UserTypeMngAction extends Action {

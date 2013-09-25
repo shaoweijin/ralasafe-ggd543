@@ -4,12 +4,12 @@
  */
 package org.ralasafe.db.sql;
 
-import java.util.Map;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.ralasafe.RalasafeException;
 import org.ralasafe.user.User;
+
+import java.util.Map;
 
 public class UserValue implements Value {
 	private static Log log=LogFactory.getLog( UserValue.class );

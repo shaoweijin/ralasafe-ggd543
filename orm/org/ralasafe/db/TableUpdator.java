@@ -4,9 +4,9 @@
  */
 package org.ralasafe.db;
 
-import java.sql.Connection;
-
 import org.ralasafe.EntityExistException;
+
+import java.sql.Connection;
 
 /**
  * Update entity operations to database.

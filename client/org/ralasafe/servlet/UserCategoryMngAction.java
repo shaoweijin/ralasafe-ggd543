@@ -4,9 +4,9 @@
  */
 package org.ralasafe.servlet;
 
-import javax.servlet.http.HttpServletRequest;
-
 import org.ralasafe.entitle.UserCategoryManager;
+
+import javax.servlet.http.HttpServletRequest;
 
 public class UserCategoryMngAction extends AbstractTreeAction {
 	public AbstractTreeHandler createTreeHandler( HttpServletRequest req ) {

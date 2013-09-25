@@ -4,8 +4,6 @@
  */
 package org.ralasafe.servlet;
 
-import java.util.Map;
-
 import org.ralasafe.EntityExistException;
 import org.ralasafe.db.sql.xml.DefineVariable;
 import org.ralasafe.db.sql.xml.ExprGroup;
@@ -16,6 +14,8 @@ import org.ralasafe.entitle.UserCategoryManager;
 import org.ralasafe.script.AbstractPolicy;
 import org.ralasafe.script.ScriptFactory;
 import org.ralasafe.user.User;
+
+import java.util.Map;
 
 public class UserCategoryPolicyDesignHandler extends AbstractPolicyDesignHandler {
 	private final UserCategoryManager manager;

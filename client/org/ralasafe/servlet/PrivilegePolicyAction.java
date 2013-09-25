@@ -4,18 +4,17 @@
  */
 package org.ralasafe.servlet;
 
-import java.io.IOException;
-import java.util.Collection;
-
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.ralasafe.entitle.EntitleManager;
 import org.ralasafe.privilege.Privilege;
 import org.ralasafe.privilege.PrivilegeManager;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.util.Collection;
 
 public class PrivilegePolicyAction extends Action {
 	private static final Log log=LogFactory.getLog( PrivilegePolicyAction.class );

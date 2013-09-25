@@ -4,24 +4,13 @@
  */
 package org.ralasafe.db;
 
-import java.sql.Connection;
-import java.sql.DatabaseMetaData;
-import java.sql.ResultSet;
-import java.sql.ResultSetMetaData;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.ralasafe.util.DBUtil;
 import org.ralasafe.util.StringUtil;
+
+import java.sql.*;
+import java.util.*;
 
 /**
  * Reflect schema's table and view infos.

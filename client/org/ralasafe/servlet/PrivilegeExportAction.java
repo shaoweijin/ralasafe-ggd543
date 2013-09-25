@@ -4,14 +4,13 @@
  */
 package org.ralasafe.servlet;
 
-import java.io.IOException;
-import java.util.Collection;
+import org.ralasafe.privilege.PrivilegeManager;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-import org.ralasafe.privilege.PrivilegeManager;
+import java.io.IOException;
+import java.util.Collection;
 
 public class PrivilegeExportAction extends Action {
 

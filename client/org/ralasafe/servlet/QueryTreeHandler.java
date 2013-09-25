@@ -4,15 +4,14 @@
  */
 package org.ralasafe.servlet;
 
-import java.util.Collection;
-import java.util.Iterator;
-
-import javax.servlet.http.HttpServletRequest;
-
 import org.ralasafe.EntityExistException;
 import org.ralasafe.entitle.Query;
 import org.ralasafe.entitle.QueryManager;
 import org.ralasafe.group.Node;
+
+import javax.servlet.http.HttpServletRequest;
+import java.util.Collection;
+import java.util.Iterator;
 
 public class QueryTreeHandler extends AbstractTreeHandler {
 	private QueryManager manager;

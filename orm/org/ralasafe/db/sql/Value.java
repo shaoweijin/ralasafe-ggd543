@@ -4,9 +4,9 @@
  */
 package org.ralasafe.db.sql;
 
-import java.util.Map;
-
 import org.ralasafe.user.User;
+
+import java.util.Map;
 
 public interface Value extends Operand, Parameter {
 	/**

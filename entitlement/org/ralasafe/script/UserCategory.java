@@ -4,18 +4,16 @@
  */
 package org.ralasafe.script;
 
-import java.io.PrintWriter;
-import java.io.StringWriter;
-import java.util.Map;
-
+import bsh.EvalError;
+import bsh.Interpreter;
 import org.ralasafe.SystemConstant;
 import org.ralasafe.entitle.QueryManager;
 import org.ralasafe.entitle.UserCategoryTestResult;
 import org.ralasafe.user.User;
-import org.ralasafe.util.StringUtil;
 
-import bsh.EvalError;
-import bsh.Interpreter;
+import java.io.PrintWriter;
+import java.io.StringWriter;
+import java.util.Map;
 
 public class UserCategory extends AbstractPolicy implements Script {
 	

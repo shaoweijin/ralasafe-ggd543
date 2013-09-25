@@ -4,30 +4,9 @@
  */
 package org.ralasafe.servlet;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
-
 import org.ralasafe.EntityExistException;
 import org.ralasafe.db.sql.Value;
-import org.ralasafe.db.sql.xml.BinaryExpr;
-import org.ralasafe.db.sql.xml.ContextValue;
-import org.ralasafe.db.sql.xml.DefineVariable;
-import org.ralasafe.db.sql.xml.ExprGroup;
-import org.ralasafe.db.sql.xml.ExprGroupTypeItem;
-import org.ralasafe.db.sql.xml.Formula;
-import org.ralasafe.db.sql.xml.HintValue;
-import org.ralasafe.db.sql.xml.InExpr;
-import org.ralasafe.db.sql.xml.IsNotNullExpr;
-import org.ralasafe.db.sql.xml.IsNullExpr;
-import org.ralasafe.db.sql.xml.NotInExpr;
-import org.ralasafe.db.sql.xml.QueryRef;
-import org.ralasafe.db.sql.xml.SimpleValue;
-import org.ralasafe.db.sql.xml.UserValue;
-import org.ralasafe.db.sql.xml.Variable;
-import org.ralasafe.db.sql.xml.Variable1;
-import org.ralasafe.db.sql.xml.Variable2;
+import org.ralasafe.db.sql.xml.*;
 import org.ralasafe.db.sql.xml.types.LinkerType;
 import org.ralasafe.entitle.Query;
 import org.ralasafe.entitle.QueryManager;
@@ -36,6 +15,11 @@ import org.ralasafe.script.AbstractPolicy;
 import org.ralasafe.user.User;
 import org.ralasafe.util.StringUtil;
 import org.ralasafe.util.Util;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
 
 public abstract class AbstractPolicyDesignHandler {
 	private String designMainPage="/ralasafe/common/policyDesignTemplate.jsp";

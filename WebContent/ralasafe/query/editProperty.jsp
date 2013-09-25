@@ -6,9 +6,9 @@
 %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@page import="org.ralasafe.servlet.QueryRawHandler"%>
+<%@page import="org.ralasafe.db.sql.xml.Column"%>
 <%@page import="org.ralasafe.db.sql.xml.QueryType"%>
-<%@page import="org.ralasafe.db.sql.xml.Column"%> 
+<%@page import="org.ralasafe.servlet.QueryRawHandler"%>
 
 <%
 org.ralasafe.util.I18N i18n=org.ralasafe.util.I18N.getWebInstance( request );

@@ -4,10 +4,10 @@
  */
 package org.ralasafe.servlet;
 
-import javax.servlet.http.HttpServletRequest;
-
 import org.ralasafe.entitle.BusinessData;
 import org.ralasafe.entitle.BusinessDataManager;
+
+import javax.servlet.http.HttpServletRequest;
 
 public class BusinessDataPolicyAction extends AbstractPolicyAction {
 	//private static final Log log=LogFactory.getLog( BusinessDataPolicyAction.class );

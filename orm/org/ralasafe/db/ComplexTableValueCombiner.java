@@ -4,16 +4,10 @@
  */
 package org.ralasafe.db;
 
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.LinkedHashMap;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
-
 import org.ralasafe.GeneralPK;
 import org.ralasafe.util.Util;
+
+import java.util.*;
 
 /**
  * Given a conditon, we query MainTable, SingleValueTables and MultiValueTables.

@@ -4,28 +4,11 @@
  */
 package org.ralasafe.servlet;
 
-import java.io.File;
-import java.io.IOException;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.Iterator;
-import java.util.List;
-
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
 import org.apache.commons.fileupload.FileItem;
 import org.apache.commons.fileupload.FileUploadException;
 import org.apache.commons.fileupload.disk.DiskFileItemFactory;
 import org.apache.commons.fileupload.servlet.ServletFileUpload;
-import org.ralasafe.EntityExistException;
-import org.ralasafe.Factory;
-import org.ralasafe.RalasafeException;
-import org.ralasafe.ResourceConstants;
-import org.ralasafe.SystemConstant;
-import org.ralasafe.WebRalasafe;
+import org.ralasafe.*;
 import org.ralasafe.application.Application;
 import org.ralasafe.application.ApplicationManager;
 import org.ralasafe.metadata.user.UserMetadata;
@@ -34,6 +17,17 @@ import org.ralasafe.privilege.Privilege;
 import org.ralasafe.userType.UserType;
 import org.ralasafe.userType.UserTypeManager;
 import org.ralasafe.util.Util;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.File;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.Iterator;
+import java.util.List;
 
 public class UserTypeInstallAction extends Action {
 	private SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd-HHmm");

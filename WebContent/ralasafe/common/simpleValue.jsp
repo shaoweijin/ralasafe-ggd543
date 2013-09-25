@@ -7,9 +7,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ page import="org.ralasafe.db.sql.xml.DefineVariable" %>
-<%@ page import="org.ralasafe.servlet.AbstractPolicyDesignHandler" %>
-<%@ page import="org.ralasafe.db.sql.xml.SimpleValue"%>
-<%@ page import="org.ralasafe.db.sql.xml.SimpleValueType"%>
+<%@ page import="org.ralasafe.db.sql.xml.SimpleValue" %>
 <%@ page import="org.ralasafe.db.sql.xml.types.SimpleValueTypeTypeType"%>
 
 <%

@@ -4,27 +4,9 @@
  */
 package org.ralasafe.privilege;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
-
 import org.ralasafe.Factory;
 import org.ralasafe.RalasafeException;
-import org.ralasafe.db.DBPower;
-import org.ralasafe.db.FieldWhereElement;
-import org.ralasafe.db.JavaBeanColumnAdapter;
-import org.ralasafe.db.JavaBeanObjectNewer;
-import org.ralasafe.db.SelectCondition;
-import org.ralasafe.db.SingleValueComparator;
-import org.ralasafe.db.Table;
-import org.ralasafe.db.TableNewer;
-import org.ralasafe.db.TableUpdator;
+import org.ralasafe.db.*;
 import org.ralasafe.db.impl.TableDeletorImpl;
 import org.ralasafe.db.impl.TableSaverImpl;
 import org.ralasafe.db.impl.TableSelectorImpl;
@@ -32,6 +14,9 @@ import org.ralasafe.db.impl.TableUpdatorImpl;
 import org.ralasafe.metadata.user.FieldMetadata;
 import org.ralasafe.user.User;
 import org.ralasafe.userType.UserType;
+
+import java.util.*;
+import java.util.Comparator;
 
 public class UserRoleManagerImpl implements UserRoleManager {
 

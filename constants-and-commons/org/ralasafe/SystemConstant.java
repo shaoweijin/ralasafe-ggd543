@@ -4,6 +4,9 @@
  */
 package org.ralasafe;
 
+/**
+ * 全局常量类
+ */
 public class SystemConstant {
 	public static final String USER_KEY = "_$user";
 	public static final String CONTEXT = "_$context";

@@ -4,9 +4,9 @@
  */
 package org.ralasafe.userType;
 
-import java.util.Collection;
-
 import org.ralasafe.EntityExistException;
+
+import java.util.Collection;
 
 public interface UserTypeManager {
  

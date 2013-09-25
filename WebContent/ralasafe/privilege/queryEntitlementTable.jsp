@@ -6,11 +6,11 @@
 %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@page import="org.ralasafe.entitle.QueryEntitlement"%>
+<%@page import="org.ralasafe.privilege.Privilege"%>
+<%@page import="org.ralasafe.servlet.QueryEntitlementHandler"%>
 <%@page import="java.util.Collection"%>
 <%@page import="java.util.Iterator"%>
-<%@page import="org.ralasafe.servlet.QueryEntitlementHandler"%>
-<%@page import="org.ralasafe.privilege.Privilege"%>
-<%@page import="org.ralasafe.entitle.QueryEntitlement"%>
 
 <%
 org.ralasafe.util.I18N i18n=org.ralasafe.util.I18N.getWebInstance( request );

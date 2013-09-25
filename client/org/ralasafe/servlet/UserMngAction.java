@@ -4,13 +4,6 @@
  */
 package org.ralasafe.servlet;
 
-import java.io.IOException;
-import java.util.Collection;
-
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.ralasafe.WebConstants;
@@ -21,6 +14,12 @@ import org.ralasafe.privilege.Privilege;
 import org.ralasafe.user.User;
 import org.ralasafe.user.UserManager;
 import org.ralasafe.userType.UserType;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.util.Collection;
 
 public class UserMngAction extends Action {
 

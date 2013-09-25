@@ -4,14 +4,11 @@
  */
 package org.ralasafe.db;
 
+import org.ralasafe.ObjectNewer;
+import org.ralasafe.util.Util;
+
 import java.util.ArrayList;
 import java.util.List;
-
-import org.ralasafe.ObjectNewer;
-import org.ralasafe.db.MapStorageObjectNewer;
-import org.ralasafe.db.MapStorgeObject;
-import org.ralasafe.db.MultiValueTableAdapter;
-import org.ralasafe.util.Util;
 
 public class DefaultMultiValueTableAdapter implements MultiValueTableAdapter {
 	private String mapKey;

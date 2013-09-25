@@ -6,14 +6,14 @@
 %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@page import="java.util.Collection"%>
-<%@page import="java.util.Iterator"%>
 <%@page import="org.ralasafe.privilege.Privilege"%>
+<%@page import="org.ralasafe.util.StringUtil"%>
+<%@page import="java.util.Collection"%>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">  
 
 
-<%@page import="org.ralasafe.util.StringUtil"%><html>
+<%@page import="java.util.Iterator"%><html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="shortcut icon" href="../favicon.ico"> 

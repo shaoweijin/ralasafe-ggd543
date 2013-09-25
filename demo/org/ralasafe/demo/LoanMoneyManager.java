@@ -4,12 +4,12 @@
  */
 package org.ralasafe.demo;
 
+import org.ralasafe.util.DBUtil;
+
 import java.sql.Connection;
 import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
-
-import org.ralasafe.util.DBUtil;
 
 
 public class LoanMoneyManager {

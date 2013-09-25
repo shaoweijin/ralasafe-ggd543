@@ -6,16 +6,13 @@
 %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@page import="org.ralasafe.servlet.QueryDesignHandler"%>
+<%@page import="org.ralasafe.db.sql.xml.Column"%>
 <%@page import="org.ralasafe.db.sql.xml.QueryType"%>
 <%@page import="org.ralasafe.db.sql.xml.Table"%>
-<%@page import="org.ralasafe.db.sql.xml.Column"%>
-<%@page import="org.ralasafe.util.StringUtil"%>
-<%@page import="java.util.List"%>
-<%@page import="java.util.Iterator"%>
-<%@page import="java.util.Map"%>
+<%@page import="org.ralasafe.servlet.QueryDesignHandler"%>
 <%@page import="java.util.HashMap"%>
-    
+<%@page import="java.util.Map"%>
+
 <%
 org.ralasafe.util.I18N i18n=org.ralasafe.util.I18N.getWebInstance( request );
 QueryDesignHandler handler=(QueryDesignHandler) request.getAttribute( "handler" );

@@ -4,26 +4,18 @@
  */
 package org.ralasafe.db.impl;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+import org.ralasafe.db.*;
+import org.ralasafe.util.DBUtil;
+import org.ralasafe.util.Util;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
-
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
-import org.ralasafe.db.Column;
-import org.ralasafe.db.ColumnAdapter;
-import org.ralasafe.db.DBLevelException;
-import org.ralasafe.db.DBPower;
-import org.ralasafe.db.FieldWhereElement;
-import org.ralasafe.db.Table;
-import org.ralasafe.db.TableDeletor;
-import org.ralasafe.db.WhereElement;
-import org.ralasafe.db.WhereElementUtil;
-import org.ralasafe.util.DBUtil;
-import org.ralasafe.util.Util;
 
 public class TableDeletorImpl implements TableDeletor {
 	private Table table;

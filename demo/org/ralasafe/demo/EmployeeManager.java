@@ -4,12 +4,12 @@
  */
 package org.ralasafe.demo;
 
+import org.ralasafe.util.DBUtil;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-
-import org.ralasafe.util.DBUtil;
 
 public class EmployeeManager {
 	private static final String INSERT_SQL="INSERT INTO demouser(loginName,name,password," +

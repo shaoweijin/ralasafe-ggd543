@@ -4,17 +4,16 @@
  */
 package org.ralasafe.servlet;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Iterator;
-import java.util.List;
-
-import javax.servlet.http.HttpServletRequest;
-
 import org.ralasafe.EntityExistException;
 import org.ralasafe.group.Node;
 import org.ralasafe.privilege.Privilege;
 import org.ralasafe.privilege.PrivilegeManager;
+
+import javax.servlet.http.HttpServletRequest;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.List;
 
 public class PrivilegeTreeHandler extends AbstractTreeHandler {
 	protected final PrivilegeManager manager;

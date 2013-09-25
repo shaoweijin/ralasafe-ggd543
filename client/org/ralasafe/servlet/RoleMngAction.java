@@ -4,15 +4,6 @@
  */
 package org.ralasafe.servlet;
 
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.util.Collection;
-import java.util.Iterator;
-
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.ralasafe.EntityExistException;
@@ -21,6 +12,14 @@ import org.ralasafe.privilege.Role;
 import org.ralasafe.privilege.RoleManager;
 import org.ralasafe.util.StringUtil;
 import org.ralasafe.util.Util;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.Collection;
+import java.util.Iterator;
 
 public class RoleMngAction extends Action {
 	private static final Log log=LogFactory.getLog( RoleMngAction.class );

@@ -4,21 +4,16 @@
  */
 package org.ralasafe.db.impl;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.ralasafe.EntityExistException;
-import org.ralasafe.db.Column;
-import org.ralasafe.db.ColumnAdapter;
-import org.ralasafe.db.DBLevelException;
-import org.ralasafe.db.DBPower;
-import org.ralasafe.db.Table;
-import org.ralasafe.db.TableUpdator;
+import org.ralasafe.db.*;
 import org.ralasafe.util.DBUtil;
 import org.ralasafe.util.Util;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 
 public class TableUpdatorImpl implements TableUpdator {
 

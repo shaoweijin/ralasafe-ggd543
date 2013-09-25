@@ -4,43 +4,12 @@
  */
 package org.ralasafe.entitle;
 
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.StringReader;
-import java.io.StringWriter;
-import java.sql.Connection;
-import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Locale;
-import java.util.Map;
-import java.util.Set;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.exolab.castor.xml.MarshalException;
 import org.exolab.castor.xml.ValidationException;
-import org.ralasafe.EntityExistException;
-import org.ralasafe.Factory;
-import org.ralasafe.RalasafeException;
-import org.ralasafe.ResourceConstants;
-import org.ralasafe.SystemConstant;
-import org.ralasafe.db.DBLevelException;
-import org.ralasafe.db.DBPower;
-import org.ralasafe.db.JavaBeanColumnAdapter;
-import org.ralasafe.db.JavaBeanObjectNewer;
-import org.ralasafe.db.SelectCondition;
-import org.ralasafe.db.Table;
-import org.ralasafe.db.TableNewer;
+import org.ralasafe.*;
+import org.ralasafe.db.*;
 import org.ralasafe.db.impl.TableDeletorImpl;
 import org.ralasafe.db.impl.TableSaverImpl;
 import org.ralasafe.db.impl.TableSelectorImpl;
@@ -56,6 +25,12 @@ import org.ralasafe.util.DBUtil;
 import org.ralasafe.util.IOUtil;
 import org.ralasafe.util.StringUtil;
 import org.ralasafe.util.Util;
+
+import java.io.*;
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.util.*;
+import java.util.Comparator;
 
 public class UserCategoryManagerImpl implements UserCategoryManager {
 	private static final int ROOT_ID = 0;

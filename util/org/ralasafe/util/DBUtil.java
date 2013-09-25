@@ -4,19 +4,14 @@
  */
 package org.ralasafe.util;
 
-import java.sql.Connection;
-import java.sql.DatabaseMetaData;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.ralasafe.RalasafeException;
 import org.ralasafe.db.Column;
 import org.ralasafe.db.DBPower;
 import org.ralasafe.db.Table;
+
+import java.sql.*;
 
 public class DBUtil {
 	private static Log log=LogFactory.getLog( DBUtil.class );

@@ -4,11 +4,7 @@
  */
 package org.ralasafe.util;
 
-import org.ralasafe.db.sql.xml.BinaryExpr;
-import org.ralasafe.db.sql.xml.InExpr;
-import org.ralasafe.db.sql.xml.IsNotNullExpr;
-import org.ralasafe.db.sql.xml.IsNullExpr;
-import org.ralasafe.db.sql.xml.NotInExpr;
+import org.ralasafe.db.sql.xml.*;
 import org.ralasafe.db.sql.xml.types.LinkerType;
 
 public class ExpressionFormatter {

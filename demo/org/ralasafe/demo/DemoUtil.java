@@ -4,12 +4,9 @@
  */
 package org.ralasafe.demo;
 
-import java.sql.Connection;
-import java.text.MessageFormat;
-import java.util.Locale;
-import java.util.ResourceBundle;
-
 import org.ralasafe.db.DBPower;
+
+import java.sql.Connection;
 
 public class DemoUtil {
 	

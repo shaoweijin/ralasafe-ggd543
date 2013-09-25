@@ -4,12 +4,12 @@
  */
 package org.ralasafe.db.sql;
 
+import org.ralasafe.ObjectNewer;
+import org.ralasafe.util.StringUtil;
+
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
-
-import org.ralasafe.ObjectNewer;
-import org.ralasafe.util.StringUtil;
 
 public class Select implements SQLElement {
 	private ArrayList columns = new ArrayList();

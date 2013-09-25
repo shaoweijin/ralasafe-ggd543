@@ -4,30 +4,19 @@
  */
 package org.ralasafe.servlet;
 
-import java.io.StringReader;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Locale;
-import java.util.Map;
-import java.util.Set;
-
 import org.exolab.castor.xml.MarshalException;
 import org.exolab.castor.xml.ValidationException;
 import org.ralasafe.EntityExistException;
 import org.ralasafe.db.sql.xml.DefineVariable;
 import org.ralasafe.db.sql.xml.UserCategory;
 import org.ralasafe.db.sql.xml.UserCategoryType;
-import org.ralasafe.entitle.EntitleManager;
-import org.ralasafe.entitle.Query;
-import org.ralasafe.entitle.QueryEntitlement;
-import org.ralasafe.entitle.QueryEntitlementTestResult;
-import org.ralasafe.entitle.QueryManager;
+import org.ralasafe.entitle.*;
 import org.ralasafe.privilege.Privilege;
 import org.ralasafe.user.User;
 import org.ralasafe.util.Util;
+
+import java.io.StringReader;
+import java.util.*;
 
 public class QueryEntitlementHandler {
 	private Privilege privilege;

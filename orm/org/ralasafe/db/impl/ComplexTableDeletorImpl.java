@@ -4,17 +4,13 @@
  */
 package org.ralasafe.db.impl;
 
-import java.sql.Connection;
-import java.sql.SQLException;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.ralasafe.db.ComplexTable;
-import org.ralasafe.db.ComplexTableDBHelper;
-import org.ralasafe.db.ComplexTableDeletor;
-import org.ralasafe.db.DBLevelException;
-import org.ralasafe.db.Table;
+import org.ralasafe.db.*;
 import org.ralasafe.util.Util;
+
+import java.sql.Connection;
+import java.sql.SQLException;
 
 public class ComplexTableDeletorImpl implements ComplexTableDeletor {
 	private ComplexTable complexTable;
