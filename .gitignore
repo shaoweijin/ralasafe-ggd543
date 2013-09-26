@@ -1,2 +1,7 @@
 /build
 /logs
+/.idea
+/*.iml
+/*.ipr
+.project
+.classpath
