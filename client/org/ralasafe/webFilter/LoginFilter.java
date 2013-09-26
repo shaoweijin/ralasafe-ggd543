@@ -56,11 +56,11 @@ public class LoginFilter implements Filter {
      */
     private String[] uniqueFieldsParams;
     /**
-     * 默认密码
+     * 登陆密码字段
      */
     private String passwordParam;
     /**
-     * 密码字段名
+     * 用户元数据描述文件的密码字段
      */
     private String userPasswordField;
     /**

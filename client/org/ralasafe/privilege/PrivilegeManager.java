@@ -9,51 +9,53 @@ import org.ralasafe.EntityExistException;
 import java.util.Collection;
 import java.util.Locale;
 
+/**
+ * 为{@link Privilege}类提供管理功能的接口
+ */
 public interface PrivilegeManager {
 
-	public abstract Privilege addPrivilege(Privilege pvlg)
-			throws EntityExistException;
+    public abstract Privilege addPrivilege(Privilege pvlg) throws EntityExistException;
 
-	public abstract void updatePrivilege(Privilege pvlg)
-			throws EntityExistException;
+    public abstract void updatePrivilege(Privilege pvlg) throws EntityExistException;
 
-	public abstract void deletePrivilege(int id);
+    public abstract void deletePrivilege(int id);
 
-	public abstract Privilege getPrivilege(int id);
+    public abstract Privilege getPrivilege(int id);
 
-	public abstract Collection getLikelyPrivileges(String name);
-	public abstract Collection getLikelyPrivilegesByUrl(String url);
-	
-	public abstract Collection getAllBusinessPrivileges();
+    public abstract Collection getLikelyPrivileges(String name);
 
-	public abstract Collection getAllNonRolePrivileges();
+    public abstract Collection getLikelyPrivilegesByUrl(String url);
 
-	/**
-	 * Move privilge to target, and new position is newOrderNum.
-	 * Nodes before newOrderNum keep their position, while nodes after newOrderNum should move backword(orderNum++)
-	 * 
-	 * @param privilege
-	 * @param target
-	 * @param newOrderNum
-	 */
-	public abstract void movePrivilege(Privilege privilege, Privilege target,
-			int newOrderNum);
+    public abstract Collection getAllBusinessPrivileges();
 
-	public abstract void deletePrivilegeCascade(int id);
+    public abstract Collection getAllNonRolePrivileges();
 
-	public abstract Privilege getParent(Privilege privilege);
+    /**
+     * Move privilge to target, and new position is newOrderNum.
+     * Nodes before newOrderNum keep their position, while nodes after newOrderNum should move backword(orderNum++)
+     *
+     * @param privilege
+     * @param target
+     * @param newOrderNum
+     */
+    public abstract void movePrivilege(Privilege privilege, Privilege target,
+                                       int newOrderNum);
 
-	public abstract Collection getChildren(Privilege privilege);
+    public abstract void deletePrivilegeCascade(int id);
 
-	public abstract boolean isChild(int pId, int id);
+    public abstract Privilege getParent(Privilege privilege);
 
-	public abstract boolean isCascadeChild(int pId, int id);
+    public abstract Collection getChildren(Privilege privilege);
 
-	public abstract Privilege getBusinessPrivilegeTree();
+    public abstract boolean isChild(int pId, int id);
 
-	public abstract Privilege getNonRolePrivilegeTree();
+    public abstract boolean isCascadeChild(int pId, int id);
 
-	public abstract Privilege getTree(int id);
+    public abstract Privilege getBusinessPrivilegeTree();
 
-	public abstract void addReservedPrivilege(Locale locale);
+    public abstract Privilege getNonRolePrivilegeTree();
+
+    public abstract Privilege getTree(int id);
+
+    public abstract void addReservedPrivilege(Locale locale);
 }

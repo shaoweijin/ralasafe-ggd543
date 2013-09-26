@@ -8,6 +8,8 @@ import org.apache.commons.fileupload.FileItem;
 import org.apache.commons.fileupload.FileUploadException;
 import org.apache.commons.fileupload.disk.DiskFileItemFactory;
 import org.apache.commons.fileupload.servlet.ServletFileUpload;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.ralasafe.*;
 import org.ralasafe.application.Application;
 import org.ralasafe.application.ApplicationManager;
@@ -30,137 +32,135 @@ import java.util.Iterator;
 import java.util.List;
 
 public class UserTypeInstallAction extends Action {
-	private SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd-HHmm");
+    private Log log = LogFactory.getLog(getClass());
 
-	/*
-	 * (non-Java-doc)
-	 * 
-	 * @see javax.servlet.http.HttpServlet#doGet(HttpServletRequest request,
-	 * HttpServletResponse response)
-	 */
-	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
-			throws ServletException, IOException {
-		if (RalasafeController.isSecured()) {
-			if (!WebRalasafe
-					.hasPrivilege(req, Privilege.POLICY_ADMIN_ID)) {
-				throw new RalasafeException(Util.getMessage(req.getLocale(),
-						ResourceConstants.NO_PRIVILEGE, Util.getMessage(req
-								.getLocale(), ResourceConstants.POLICY_ADMIN)));
-			}
-		}
+//    private SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd-HHmm");
 
-		Object[] values = extractValues(req);
-		String op = (String) values[0];
-		UserType userType = (UserType) values[1];
-		userType.setName("ralasafe");
+    /*
+     * (non-Java-doc)
+     *
+     * @see javax.servlet.http.HttpServlet#doGet(HttpServletRequest request,
+     * HttpServletResponse response)
+     */
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp)
+            throws ServletException, IOException {
+        if (RalasafeController.isSecured()) {
+            if (!WebRalasafe.hasPrivilege(req, Privilege.POLICY_ADMIN_ID)) {
+                throw new RalasafeException(Util.getMessage(req.getLocale(), ResourceConstants.NO_PRIVILEGE,
+                        Util.getMessage(req.getLocale(), ResourceConstants.POLICY_ADMIN)));
+            }
+        }
 
-		Application app = new Application();
-		app.setName("ralasafe");
-		app.setDescription("ralasafe application");
-		ArrayList userTypes = new ArrayList();
-		userTypes.add(userType);
-		app.setUserTypes(userTypes);
+        Object[] values = extractValues(req);
+        String op = (String) values[0];
+        UserType userType = (UserType) values[1];
 
-		UserTypeManager userTypeMng=Factory.getUserTypeManager();
-		ApplicationManager appMng=Factory.getApplicationManager();
-		
-		if ("add".equalsIgnoreCase(op)) {
-			try {
-				userTypeMng.addUserType(userType);
+        Application app = new Application();
+        app.setName("ralasafe");
+        app.setDescription("ralasafe application");
+        ArrayList userTypes = new ArrayList();
+        userTypes.add(userType);
+        app.setUserTypes(userTypes);
 
-				// Create application named ralasafe, and add this usertype to it
-				try {
-					appMng.addApplication(req.getLocale(), app);
-				} catch (Exception e) {
-					appMng.updateApplicatonUserType("ralasafe", userType);
-				}
-			} catch (EntityExistException e) {
-			}
-		} else if ("update".equalsIgnoreCase(op)) {
-			userTypeMng.updateUserType(userType);
-			appMng.updateApplicatonUserType("ralasafe", userType);
-		}
+        UserTypeManager userTypeMng = Factory.getUserTypeManager();
+        ApplicationManager appMng = Factory.getApplicationManager();
 
-		req.setAttribute("userType", userType);
-		req.setAttribute("editable", Boolean.FALSE);
-		WebUtil.forward( req, resp, "/ralasafe/userType/view.jsp");
-	}
+        if ("add".equalsIgnoreCase(op)) {
+            try {
+                userTypeMng.addUserType(userType);
 
-	/**
-	 * 
-	 * @param req
-	 * @return Object[]{op<String>,userType<UserType>}
-	 * @throws ServletException
-	 */
-	private Object[] extractValues(HttpServletRequest req)
-			throws ServletException, IOException {
-		String op = null;
-		UserType userType = new UserType();
-		
-		String userTypeStoreDir=SystemConstant.getUserTypeStoreDir();
-		
-		DiskFileItemFactory factory = new DiskFileItemFactory();
-		factory.setRepository(new File(userTypeStoreDir));
-		ServletFileUpload upload = new ServletFileUpload(factory);
+                // Create application named ralasafe, and add this usertype to it
+                try {
+                    appMng.addApplication(req.getLocale(), app);
+                } catch (Exception e) {
+                    appMng.updateApplicatonUserType("ralasafe", userType);
+                }
+            } catch (EntityExistException e) {
 
-		List items;
-		try {
-			items = upload.parseRequest(req);
-		} catch (FileUploadException e) {
-			throw new ServletException(e);
-		}
+            }
+        } else if ("update".equalsIgnoreCase(op)) {
+            userTypeMng.updateUserType(userType);
+            appMng.updateApplicatonUserType("ralasafe", userType);
+        }
 
-		for (Iterator iter = items.iterator(); iter.hasNext();) {
-			FileItem item = (FileItem) iter.next();
-			if (item.isFormField()) {
-				String fieldName = item.getFieldName();
-				String value = item.getString();
-				if( value!=null ) {
-					value=new String(value.getBytes("ISO-8859-1"),"UTF-8");
-				}
+        req.setAttribute("userType", userType);
+        req.setAttribute("editable", Boolean.FALSE);
+        WebUtil.forward(req, resp, "/ralasafe/userType/view.jsp");
+    }
 
-				if ("name".equalsIgnoreCase(fieldName)) {
-					userType.setName(value);
-				} else if ("desc".equalsIgnoreCase(fieldName)) {
-					userType.setDesc(value);
-				} else if ("op".equalsIgnoreCase(fieldName)) {
-					op = value;
-				}
-			} else {
-				String clientFile = item.getName();
-				int index = clientFile.lastIndexOf("\\");
-				if (index == -1) {
-					index = clientFile.lastIndexOf("/");
-				}
-				String serverFile = userTypeStoreDir + File.separator
-						+ sdf.format(new Date()) + "-"
-						+ clientFile.substring(index + 1);
-				userType.setSrcFile(serverFile);
-				File f = new File(serverFile);
-				;
-				try {
-					item.write(f);
-				} catch (Exception e) {
-					throw new ServletException(e);
-				}
+    /**
+     * @param req
+     * @return Object[]{op<String>,userType<UserType>}
+     * @throws ServletException
+     */
+    private Object[] extractValues(HttpServletRequest req)
+            throws ServletException, IOException {
+        String op = null;
+        UserType userType = new UserType();
 
-				UserMetadataParser parser = new UserMetadataParser();
-				UserMetadata metadata = parser.parse(f.getAbsolutePath());
-				userType.setUserMetadata(metadata);
-			}
-		}
+        String userTypeStoreDir = SystemConstant.getUserTypeStoreDir();
 
-		return new Object[] { op, userType };
-	}
+        DiskFileItemFactory factory = new DiskFileItemFactory();
+        factory.setRepository(new File(userTypeStoreDir));
+        ServletFileUpload upload = new ServletFileUpload(factory);
 
-	/*
-	 * (non-Java-doc)
-	 * 
-	 * @see javax.servlet.http.HttpServlet#doPost(HttpServletRequest request,
-	 * HttpServletResponse response)
-	 */
-	protected void doPost(HttpServletRequest request,
-			HttpServletResponse response) throws ServletException, IOException {
-		doGet(request, response);
-	}
+        List items;
+        try {
+            items = upload.parseRequest(req);
+        } catch (FileUploadException e) {
+            throw new ServletException(e);
+        }
+
+        for (Iterator iter = items.iterator(); iter.hasNext(); ) {
+            FileItem item = (FileItem) iter.next();
+            if (item.isFormField()) {
+                String fieldName = item.getFieldName();
+                String value = item.getString();
+                if (value != null) {
+                    value = new String(value.getBytes("ISO-8859-1"), "UTF-8");
+                }
+
+                if ("name".equalsIgnoreCase(fieldName)) {
+                    userType.setName(value);
+                } else if ("desc".equalsIgnoreCase(fieldName)) {
+                    userType.setDesc(value);
+                } else if ("op".equalsIgnoreCase(fieldName)) {
+                    op = value;
+                }
+            } else {
+                String clientFile = item.getName();
+                int index = clientFile.lastIndexOf("\\");
+                if (index == -1) {
+                    index = clientFile.lastIndexOf("/");
+                }
+                SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd-HHmm");
+                String serverFile = userTypeStoreDir + File.separator + sdf.format(new Date()) + "-" + clientFile.substring(index + 1);
+                userType.setSrcFile(serverFile);
+                File f = new File(serverFile);
+
+                try {
+                    item.write(f);
+                } catch (Exception e) {
+                    throw new ServletException(e);
+                }
+
+                UserMetadataParser parser = new UserMetadataParser();
+                UserMetadata metadata = parser.parse(f.getAbsolutePath());
+                userType.setUserMetadata(metadata);
+            }
+        }
+        userType.setName("ralasafe");
+        return new Object[]{op, userType};
+    }
+
+    /*
+     * (non-Java-doc)
+     *
+     * @see javax.servlet.http.HttpServlet#doPost(HttpServletRequest request,
+     * HttpServletResponse response)
+     */
+    protected void doPost(HttpServletRequest request,
+                          HttpServletResponse response) throws ServletException, IOException {
+        doGet(request, response);
+    }
 }

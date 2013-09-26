@@ -5,11 +5,16 @@
 package org.ralasafe.entitle;
 
 /**
+ *
  * A decision rule. A (decision) privilege can contain many rules.
  * A rule descibes privilege/userCategory/businessData/ relationship.
- * 
- * Unique index(privilegeId, userCategoryId, businessDataId).
+ * 表示一个决策规则，对应数据表${appName}_decision_entitlement。一个决策权限可以包含若干条决策规则。 一条决策规含有 权限/用户分类/业务数据/权限关系 的信息
+ * <p></p>
+ * 一条决策规则能通过(privilegedId,userCategoryId,businessDataId)唯一确定
+ * Unique index(privilegeId, userCategoryId, businessDataId)
+ * .
  * For a certain privilege, a certain usercategory may be refed by many businessdata.
+ *
  */
 public class DecisionEntitlement {
 	public static final String DENY="deny";

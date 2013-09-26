@@ -17,17 +17,20 @@ import java.util.Iterator;
 import java.util.Map;
 
 public class Factory {
-    private static java.util.Map privilegeManagers = new java.util.HashMap();
-    private static java.util.Map roleManagers = new java.util.HashMap();
-    private static java.util.Map userRoleManagers = new java.util.HashMap();
+
     private static final ApplicationManager applicationManager;
     private static final BackupManager backupManager;
     private static final UserTypeManager userTypeManager;
+
+    private static java.util.Map privilegeManagers = new java.util.HashMap();
+    private static java.util.Map roleManagers = new java.util.HashMap();
+    private static java.util.Map userRoleManagers = new java.util.HashMap();
+
     private static java.util.Map userManagers = new java.util.HashMap();
     private static java.util.Map filterManagers = new java.util.HashMap();
     private static java.util.Map queryManagers = new java.util.HashMap();
     private static java.util.Map userCategoryManagers = new java.util.HashMap();
-    private static java.util.Map businessDataManagers = new java.util.HashMap();
+    private static java.util.HashMap businessDataManagers = new java.util.HashMap();
     private static java.util.Map entitlementManagers = new java.util.HashMap();
 
     static {
@@ -44,10 +47,13 @@ public class Factory {
         return userTypeManager;
     }
 
-    public static UserManager getUserManager(String userTypeName) {
+    public static ApplicationManager getApplicationManager() {
+        return applicationManager;
+    }
+
+    public static synchronized UserManager getUserManager(String userTypeName) {
         if (userManagers.get(userTypeName) == null) {
-            UserType userType = Factory.getUserTypeManager().getUserType(
-                    userTypeName);
+            UserType userType = Factory.getUserTypeManager().getUserType(userTypeName);
             if (userType != null) {
                 UserManager userManager = new UserManager(userType);
                 userManagers.put(userTypeName, userManager);
@@ -74,34 +80,24 @@ public class Factory {
         entitlementManagers.remove(appName);
     }
 
-    public static ApplicationManager getApplicationManager() {
-        return applicationManager;
-    }
 
-    public static PrivilegeManager getPrivilegeManager(String appName) {
+    public static synchronized PrivilegeManager getPrivilegeManager(String appName) {
         if (privilegeManagers.get(appName) == null) {
-            synchronized (privilegeManagers) {
-                privilegeManagers.put(appName,
-                        new PrivilegeManagerImpl(appName));
-            }
+            privilegeManagers.put(appName, new PrivilegeManagerImpl(appName));
         }
         return (PrivilegeManager) privilegeManagers.get(appName);
     }
 
     public static synchronized RoleManager getRoleManager(String appName) {
         if (roleManagers.get(appName) == null) {
-            synchronized (roleManagers) {
-                roleManagers.put(appName, new RoleManagerImpl(appName));
-            }
+            roleManagers.put(appName, new RoleManagerImpl(appName));
         }
         return (RoleManager) roleManagers.get(appName);
     }
 
     public static synchronized QueryManager getQueryManager(String appName) {
         if (queryManagers.get(appName) == null) {
-            synchronized (queryManagers) {
-                queryManagers.put(appName, new QueryManagerImpl(appName));
-            }
+            queryManagers.put(appName, new QueryManagerImpl(appName));
         }
         return (QueryManager) queryManagers.get(appName);
     }
@@ -109,10 +105,7 @@ public class Factory {
     public static synchronized UserCategoryManager getUserCategoryManager(
             String appName) {
         if (userCategoryManagers.get(appName) == null) {
-            synchronized (userCategoryManagers) {
-                userCategoryManagers.put(appName, new UserCategoryManagerImpl(
-                        appName));
-            }
+            userCategoryManagers.put(appName, new UserCategoryManagerImpl(appName));
         }
         return (UserCategoryManager) userCategoryManagers.get(appName);
     }
@@ -120,39 +113,27 @@ public class Factory {
     public static synchronized BusinessDataManager getBusinessDataManager(
             String appName) {
         if (businessDataManagers.get(appName) == null) {
-            synchronized (businessDataManagers) {
-                businessDataManagers.put(appName, new BusinessDataManagerImpl(
-                        appName));
-            }
+            businessDataManagers.put(appName, new BusinessDataManagerImpl(appName));
         }
         return (BusinessDataManager) businessDataManagers.get(appName);
     }
 
     public static synchronized EntitleManager getEntitleManager(String appName) {
         if (entitlementManagers.get(appName) == null) {
-            synchronized (entitlementManagers) {
-                entitlementManagers.put(appName,                        new EntitleManagerImpl(appName));
-            }
+            entitlementManagers.put(appName, new EntitleManagerImpl(appName));
         }
         return (EntitleManager) entitlementManagers.get(appName);
     }
 
-    public static synchronized UserRoleManager getUserRoleManager(
-            String appName, String userTypeName) {
+    public static synchronized UserRoleManager getUserRoleManager(String appName, String userTypeName) {
         if (userRoleManagers.get(appName) == null) {
-            synchronized (userRoleManagers) {
-                userRoleManagers.put(appName, new java.util.HashMap());
-            }
+            userRoleManagers.put(appName, new java.util.HashMap());
         }
         Map userRoleManagerMap = (Map) userRoleManagers.get(appName);
         if (userRoleManagerMap.get(userTypeName) == null) {
-            synchronized (userRoleManagerMap) {
-                userRoleManagerMap.put(userTypeName, new UserRoleManagerImpl(
-                        appName, userTypeName));
-            }
+            userRoleManagerMap.put(userTypeName, new UserRoleManagerImpl(appName, userTypeName));
         }
-        return (UserRoleManager) ((Map) userRoleManagers.get(appName))
-                .get(userTypeName);
+        return (UserRoleManager) ((Map) userRoleManagers.get(appName)).get(userTypeName);
     }
 
     /**
@@ -173,8 +154,7 @@ public class Factory {
      *
      * @param appName
      */
-    public static synchronized void applicationUserTypeChanged(String appName,
-                                                               String userTypeName) {
+    public static synchronized void applicationUserTypeChanged(String appName, String userTypeName) {
         Map userRoleManagerMap = (Map) userRoleManagers.get(appName);
         if (userRoleManagerMap != null) {
             userRoleManagerMap.remove(userTypeName);

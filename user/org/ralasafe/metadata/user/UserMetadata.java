@@ -11,6 +11,9 @@ import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * 用户元数据类
+ */
 public class UserMetadata {
 	private TableMetadata mainTableMetadata;
 	private TableMetadata[] singleValueTableMetadatas;

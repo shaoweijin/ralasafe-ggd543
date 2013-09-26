@@ -9,13 +9,15 @@ import java.util.Map;
 
 /**
  * A sql table definition.
- * 
+ * 表示一张SQL表
+ *
  * @author back
  *
  */
 public class Table {
 	/** internal id, used only for ralasafe */
 	private int id;
+
 	private String name;
 	private Column[] idColumns;
 	private Column[] uniqueColumns;

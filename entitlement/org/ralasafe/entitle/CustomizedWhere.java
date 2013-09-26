@@ -13,16 +13,35 @@ import java.util.ArrayList;
 public class CustomizedWhere {
 	public static final String AND = "AND";
 	public static final String OR = "OR";
+    /**
+     * LIKE 条件
+     */
 	private ArrayList likeConditions = new ArrayList();
+    /**
+     * 等于 条件
+     */
 	private ArrayList equalConditions = new ArrayList();
+    /**
+     * 不等于 条件
+     */
 	private ArrayList notEqualConditions = new ArrayList();
+    /**
+     * 小于 条件
+     */
 	private ArrayList lessThanConditions = new ArrayList();
 	private ArrayList lessEqualConditions = new ArrayList();
 	private ArrayList greaterThanConditions = new ArrayList();
 	private ArrayList greaterEqualConditions = new ArrayList();
 	private ArrayList orderByConditions = new ArrayList();
+    /**
+     * 条件连接词
+     */
 	private String linker = CustomizedWhere.AND;
 
+    /**
+     * 是否有查询条件
+     * @return
+     */
 	public boolean hasCondition() {
 		return (likeConditions.size()>0 || equalConditions.size()>0
 				|| notEqualConditions.size()>0 || lessThanConditions.size()>0

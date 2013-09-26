@@ -25,6 +25,7 @@
             <param-value>shahex</param-value>
         </init-param-->
     </filter>
+
     <filter>
         <filter-name>ralasafe/UrlAclFilter</filter-name>
         <filter-class>org.ralasafe.webFilter.UrlAclFilter</filter-class>

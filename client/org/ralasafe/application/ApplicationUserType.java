@@ -7,6 +7,8 @@ package org.ralasafe.application;
 /**
  * An application may be used by many usertype.
  * Example: ERP would be used by employee, customer, supplier
+ *
+ * 映射applicationusertype表
  */
 public class ApplicationUserType {
 

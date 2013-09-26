@@ -8,7 +8,7 @@ import java.util.Collection;
 
 /**
  * Application means your EPR/OA/CRM/eHR systems, etc.
- * 
+ *  映射application表的类
  */
 public class Application {
  

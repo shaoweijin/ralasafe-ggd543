@@ -22,62 +22,61 @@ import java.util.Collection;
 
 
 public class UserTypeMngAction extends Action {
-	
 
-	/*
-	 * (non-Java-doc)
-	 * 
-	 * @see javax.servlet.http.HttpServlet#doGet(HttpServletRequest request,
-	 * HttpServletResponse response)
-	 */
-	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
-			throws ServletException, IOException {
-		if (RalasafeController.isSecured()) {
-			if (!WebRalasafe
-					.hasPrivilege(req, Privilege.POLICY_ADMIN_ID)) {
-				throw new RalasafeException(Util.getMessage(req.getLocale(),
-						ResourceConstants.NO_PRIVILEGE, Util.getMessage(req
-								.getLocale(), ResourceConstants.POLICY_ADMIN)));
-			}
-		}
 
-		String op = req.getParameter("op");
-		String name = req.getParameter("name");
+    /*
+     * (non-Java-doc)
+     *
+     * @see javax.servlet.http.HttpServlet#doGet(HttpServletRequest request,
+     * HttpServletResponse response)
+     */
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp)
+            throws ServletException, IOException {
+        if (RalasafeController.isSecured()) {
+            if (!WebRalasafe.hasPrivilege(req, Privilege.POLICY_ADMIN_ID)) {
+                throw new RalasafeException(Util.getMessage(req.getLocale(),
+                        ResourceConstants.NO_PRIVILEGE, Util.getMessage(req
+                        .getLocale(), ResourceConstants.POLICY_ADMIN)));
+            }
+        }
 
-		if (op == null) {
-			op = "select";
-		}
-		
-		UserTypeManager userTypeMng=Factory.getUserTypeManager();
-		if (op.equalsIgnoreCase("delete")) {
-			userTypeMng.deleteUserType(name);
-			// currently, we only support one application, one usertype
-			// so, when delete this usertype, the application will be deleted too
-			ApplicationManager appManager = Factory.getApplicationManager();
-			appManager.deleteApplication("ralasafe");
-		} else if (op.equalsIgnoreCase("view")) {
-			UserType userType = userTypeMng.getUserType(name);
-			req.setAttribute("userType", userType);
-			req.setAttribute("editable", Boolean.FALSE);
-			WebUtil.forward( req, resp, "/ralasafe/userType/view.jsp");
-			return;
-		}
+        String op = req.getParameter("op");
+        String name = req.getParameter("name");
 
-		Collection userTypes = userTypeMng.getAllUserTypes();
-		req.setAttribute("userTypes", userTypes);
+        if (op == null) {
+            op = "select";
+        }
 
-		WebUtil.forward( req, resp, "/ralasafe/userType/index.jsp" );
-		return;
-	}
+        UserTypeManager userTypeMng = Factory.getUserTypeManager();
+        if (op.equalsIgnoreCase("delete")) {
+            userTypeMng.deleteUserType(name);
+            // currently, we only support one application, one usertype
+            // so, when delete this usertype, the application will be deleted too
+            ApplicationManager appManager = Factory.getApplicationManager();
+            appManager.deleteApplication("ralasafe");
+        } else if (op.equalsIgnoreCase("view")) {
+            UserType userType = userTypeMng.getUserType(name);
+            req.setAttribute("userType", userType);
+            req.setAttribute("editable", Boolean.FALSE);
+            WebUtil.forward(req, resp, "/ralasafe/userType/view.jsp");
+            return;
+        }
 
-	/*
-	 * (non-Java-doc)
-	 * 
-	 * @see javax.servlet.http.HttpServlet#doPost(HttpServletRequest request,
-	 * HttpServletResponse response)
-	 */
-	protected void doPost(HttpServletRequest request,
-			HttpServletResponse response) throws ServletException, IOException {
-		doGet(request, response);
-	}
+        Collection userTypes = userTypeMng.getAllUserTypes();
+        req.setAttribute("userTypes", userTypes);
+
+        WebUtil.forward(req, resp, "/ralasafe/userType/index.jsp");
+        return;
+    }
+
+    /*
+     * (non-Java-doc)
+     *
+     * @see javax.servlet.http.HttpServlet#doPost(HttpServletRequest request,
+     * HttpServletResponse response)
+     */
+    protected void doPost(HttpServletRequest request,
+                          HttpServletResponse response) throws ServletException, IOException {
+        doGet(request, response);
+    }
 }

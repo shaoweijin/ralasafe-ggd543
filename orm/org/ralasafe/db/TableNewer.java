@@ -11,18 +11,44 @@ import java.util.Set;
 
 /**
  * Helper class for define a table.
+ * 定义数据表的工具类
  */
 public class TableNewer {
+    /**
+     * 表名
+     */
 	private String tableName;
+    /**
+     * key/value=
+     */
 	private Map columnMap=new HashMap();
+
 	private Map typeMap=new HashMap();
+
 	private Map functionMap=new HashMap();
+
 	private Map columnJavaBeanAttributeClassMap;
+    /**
+     * 每列映射的类名
+     */
 	private String[] columnJavaBeanAttributeClazz;
+    /**
+     * 数据表的列名集
+     */
 	private String[] columnNames;
+    /**
+     * 标识一条记录的列名集
+     */
 	private String[] idColumnNames;
+    /**
+     * 唯一确定一条记录的列名集
+     */
 	private String[] uniqueColumnNames;
+    /**
+     * 数据表的映射类
+     */
 	private String mappingClass;
+
 	private int id;
 
 	public String[] getColumnJavaBeanAttributeClazz() {
@@ -146,6 +172,12 @@ public class TableNewer {
 		return names;
 	}
 
+    /**
+     * 把一系列的列名转换成{@link Column}对象
+     *
+     * @param columnNames
+     * @return
+     */
 	public Column[] getColumnByName( String[] columnNames ) {
 		if( columnNames==null ) 
 			return null;

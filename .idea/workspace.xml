@@ -4,8 +4,8 @@
     <list default="true" id="09314fd5-ada6-4012-889a-d7302645312f" name="Default" comment="" />
     <ignored path="ralasafe.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/a.dummy" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109817833" ignored="false" />
-    <file path="/DBPower.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380107515429" ignored="false" />
+    <file path="/a.dummy" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380189456766" ignored="false" />
+    <file path="/DBPower.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380189677592" ignored="false" />
     <file path="E:/workspace/git/demo/jspdemo/src/main/scala/servlet/HelloServlet.scala" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380103800215" ignored="false" />
     <file path="/HelloServlet.scala" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380103779885" ignored="false" />
     <file path="/Dummy.txt" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380102014711" ignored="false" />
@@ -15,14 +15,8 @@
     <file path="/web.xml" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380103472026" ignored="false" />
     <file path="/Startup.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380104773317" ignored="false" />
     <file path="/DataSourceHelper.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380105348650" ignored="false" />
-    <file path="/LoginFilter.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109355635" ignored="false" />
+    <file path="/LoginFilter.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380163277679" ignored="false" />
     <file path="/Encrypt.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380108526922" ignored="false" />
-    <file path="$PROJECT_DIR$/orm/org/ralasafe/db/TableSaver.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548466" ignored="false" />
-    <file path="$PROJECT_DIR$/orm/org/ralasafe/db/DataSourceProviderJndiImpl.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548466" ignored="false" />
-    <file path="$PROJECT_DIR$/orm/org/ralasafe/db/DBView.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548466" ignored="false" />
-    <file path="$PROJECT_DIR$/WebContent/ralasafe/userType/index.jsp" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548466" ignored="false" />
-    <file path="$PROJECT_DIR$/WebContent/ralasafe/userType/view.jsp" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548471" ignored="false" />
-    <file path="$PROJECT_DIR$/orm/org/ralasafe/db/DefaultMultiValueTableAdapter.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548466" ignored="false" />
     <file path="$PROJECT_DIR$/WebContent/ralasafe/privilege/editQueryEntitlement.jsp" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548466" ignored="false" />
     <file path="$PROJECT_DIR$/WebContent/ralasafe/privilege/queryEntitlementTable.jsp" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548466" ignored="false" />
     <file path="$PROJECT_DIR$/orm/org/ralasafe/db/sql/ContextValue.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548466" ignored="false" />
@@ -38,16 +32,10 @@
     <file path="$PROJECT_DIR$/orm/org/ralasafe/db/sql/HintValue.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548467" ignored="false" />
     <file path="$PROJECT_DIR$/WebContent/ralasafe/privilege/testDecisionEntitlementResult.jsp" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548471" ignored="false" />
     <file path="$PROJECT_DIR$/orm/org/ralasafe/db/sql/UserValue.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548467" ignored="false" />
-    <file path="$PROJECT_DIR$/orm/org/ralasafe/db/sql/Query.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548467" ignored="false" />
-    <file path="$PROJECT_DIR$/orm/org/ralasafe/db/sql/QueryFactory.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548467" ignored="false" />
     <file path="$PROJECT_DIR$/orm/org/ralasafe/db/sql/SimpleValue.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548467" ignored="false" />
     <file path="$PROJECT_DIR$/orm/org/ralasafe/db/sql/Select.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548467" ignored="false" />
     <file path="$PROJECT_DIR$/orm/org/ralasafe/db/sql/Value.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548467" ignored="false" />
-    <file path="$PROJECT_DIR$/client/org/ralasafe/userType/UserTypeManagerImpl.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548467" ignored="false" />
-    <file path="$PROJECT_DIR$/client/org/ralasafe/userType/UserTypeManager.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548467" ignored="false" />
     <file path="$PROJECT_DIR$/entitlement/org/ralasafe/script/BusinessData.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548467" ignored="false" />
-    <file path="$PROJECT_DIR$/entitlement/org/ralasafe/script/ScriptFactory.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548467" ignored="false" />
-    <file path="$PROJECT_DIR$/entitlement/org/ralasafe/script/UserCategory.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548467" ignored="false" />
     <file path="$PROJECT_DIR$/client/filter/RequestDumperFilter.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548467" ignored="false" />
     <file path="$PROJECT_DIR$/client/filter/SetCharacterEncodingFilter.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548467" ignored="false" />
     <file path="$PROJECT_DIR$/entitlement/org/ralasafe/entitle/BusinessDataManagerImpl.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548467" ignored="false" />
@@ -55,12 +43,8 @@
     <file path="$PROJECT_DIR$/entitlement/org/ralasafe/entitle/Query.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548467" ignored="false" />
     <file path="$PROJECT_DIR$/entitlement/org/ralasafe/entitle/BusinessDataManager.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548467" ignored="false" />
     <file path="$PROJECT_DIR$/entitlement/org/ralasafe/entitle/QueryManagerImpl.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548467" ignored="false" />
-    <file path="$PROJECT_DIR$/entitlement/org/ralasafe/entitle/UserCategory.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548467" ignored="false" />
-    <file path="$PROJECT_DIR$/entitlement/org/ralasafe/entitle/UserCategoryManagerImpl.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548467" ignored="false" />
     <file path="$PROJECT_DIR$/entitlement/org/ralasafe/entitle/BackupManagerImpl.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548467" ignored="false" />
     <file path="$PROJECT_DIR$/entitlement/org/ralasafe/entitle/QueryManager.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548467" ignored="false" />
-    <file path="$PROJECT_DIR$/entitlement/org/ralasafe/entitle/UserCategoryManager.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548467" ignored="false" />
-    <file path="$PROJECT_DIR$/entitlement/org/ralasafe/entitle/BackupManager.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548467" ignored="false" />
     <file path="$PROJECT_DIR$/orm/org/ralasafe/db/sql/xml/types/descriptors/FormulaTypeTypeTypeDescriptor.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548467" ignored="false" />
     <file path="$PROJECT_DIR$/orm/org/ralasafe/db/sql/xml/types/descriptors/LinkerTypeDescriptor.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548467" ignored="false" />
     <file path="$PROJECT_DIR$/orm/org/ralasafe/db/sql/xml/types/descriptors/FormulaTypeOperatorTypeDescriptor.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548467" ignored="false" />
@@ -74,7 +58,6 @@
     <file path="$PROJECT_DIR$/orm/org/ralasafe/db/sql/xml/descriptors/BinaryExprDescriptor.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548467" ignored="false" />
     <file path="$PROJECT_DIR$/orm/org/ralasafe/db/sql/xml/descriptors/VariableDescriptor.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548467" ignored="false" />
     <file path="$PROJECT_DIR$/orm/org/ralasafe/db/sql/xml/descriptors/UserValueDescriptor.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548467" ignored="false" />
-    <file path="$PROJECT_DIR$/orm/org/ralasafe/db/sql/xml/descriptors/UserCategoryDescriptor.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548467" ignored="false" />
     <file path="$PROJECT_DIR$/orm/org/ralasafe/db/sql/xml/descriptors/WhereDescriptor.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548467" ignored="false" />
     <file path="$PROJECT_DIR$/orm/org/ralasafe/db/sql/xml/descriptors/BusinessDataDescriptor.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548467" ignored="false" />
     <file path="$PROJECT_DIR$/orm/org/ralasafe/db/sql/xml/descriptors/NotInExprDescriptor.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548467" ignored="false" />
@@ -105,13 +88,8 @@
     <file path="$PROJECT_DIR$/orm/org/ralasafe/db/sql/xml/descriptors/NotInExpressionDescriptor.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548467" ignored="false" />
     <file path="$PROJECT_DIR$/orm/org/ralasafe/db/sql/xml/descriptors/Variable1Descriptor.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548467" ignored="false" />
     <file path="$PROJECT_DIR$/orm/org/ralasafe/db/impl/ComplexTableUpdatorImpl.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548467" ignored="false" />
-    <file path="$PROJECT_DIR$/orm/org/ralasafe/db/impl/ComplexTableDeletorImpl.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548467" ignored="false" />
-    <file path="$PROJECT_DIR$/orm/org/ralasafe/db/impl/TableSelectorImpl.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548467" ignored="false" />
-    <file path="$PROJECT_DIR$/orm/org/ralasafe/db/impl/TableSaverImpl.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548467" ignored="false" />
-    <file path="$PROJECT_DIR$/orm/org/ralasafe/db/impl/TableDeletorImpl.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548467" ignored="false" />
     <file path="$PROJECT_DIR$/orm/org/ralasafe/db/impl/ComplexTableSelectorImpl.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548467" ignored="false" />
     <file path="$PROJECT_DIR$/orm/org/ralasafe/db/impl/TableUpdatorImpl.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548467" ignored="false" />
-    <file path="$PROJECT_DIR$/orm/org/ralasafe/db/impl/ComplexTableSaverImpl.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548467" ignored="false" />
     <file path="$PROJECT_DIR$/WebContent/ralasafe/user/userRoles.jsp" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548467" ignored="false" />
     <file path="$PROJECT_DIR$/WebContent/ralasafe/user/userListWidget.jsp" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548467" ignored="false" />
     <file path="$PROJECT_DIR$/WebContent/ralasafe/user/userList.jsp" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548467" ignored="false" />
@@ -137,34 +115,43 @@
     <file path="$PROJECT_DIR$/WebContent/ralasafe/common/exprTree.jsp" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548467" ignored="false" />
     <file path="$PROJECT_DIR$/WebContent/ralasafe/common/userValue.jsp" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548468" ignored="false" />
     <file path="$PROJECT_DIR$/WebContent/ralasafe/common/copyNode.jsp" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548468" ignored="false" />
-    <file path="$PROJECT_DIR$/test/org/ralasafe/entitle/QueryManagerImplTest.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548468" ignored="false" />
     <file path="$PROJECT_DIR$/WebContent/ralasafe/common/editNullExpr.jsp" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548468" ignored="false" />
     <file path="$PROJECT_DIR$/WebContent/ralasafe/common/simpleValue.jsp" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548468" ignored="false" />
     <file path="$PROJECT_DIR$/WebContent/ralasafe/common/queryRef.jsp" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548468" ignored="false" />
     <file path="$PROJECT_DIR$/WebContent/ralasafe/common/formula.jsp" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548468" ignored="false" />
     <file path="$PROJECT_DIR$/WebContent/ralasafe/common/editInExpr.jsp" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548468" ignored="false" />
-    <file path="$PROJECT_DIR$/orm/org/ralasafe/db/DefaultSingleValueTableAdapter.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548468" ignored="false" />
-    <file path="$PROJECT_DIR$/orm/org/ralasafe/db/ComplexTableDBHelper.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548468" ignored="false" />
     <file path="$PROJECT_DIR$/WebContent/ralasafe/common/contextValue.jsp" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548468" ignored="false" />
-    <file path="$PROJECT_DIR$/orm/org/ralasafe/db/TableSelector.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548468" ignored="false" />
     <file path="$PROJECT_DIR$/WebContent/ralasafe/common/editBinaryExpr.jsp" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548468" ignored="false" />
     <file path="$PROJECT_DIR$/WebContent/ralasafe/common/exprContextMenu.jsp" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548468" ignored="false" />
-    <file path="$PROJECT_DIR$/orm/org/ralasafe/db/TableDeletor.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548468" ignored="false" />
     <file path="$PROJECT_DIR$/WebContent/ralasafe/common/businessData.jsp" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548468" ignored="false" />
-    <file path="$PROJECT_DIR$/user/org/ralasafe/user/UserManager.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548468" ignored="false" />
     <file path="$PROJECT_DIR$/WebContent/ralasafe/common/variables.jsp" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548468" ignored="false" />
-    <file path="$PROJECT_DIR$/orm/org/ralasafe/db/ComplexTableValueCombiner.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548468" ignored="false" />
-    <file path="$PROJECT_DIR$/user/org/ralasafe/metadata/user/UserMetadata.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548468" ignored="false" />
-    <file path="$PROJECT_DIR$/orm/org/ralasafe/db/TableUpdator.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548468" ignored="false" />
-    <file path="$PROJECT_DIR$/user/org/ralasafe/metadata/user/UserMetadataParser.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548468" ignored="false" />
-    <file path="$PROJECT_DIR$/orm/org/ralasafe/db/JavaBeanColumnAdapter.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548468" ignored="false" />
-    <file path="$PROJECT_DIR$/util/org/ralasafe/util/Util.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548468" ignored="false" />
-    <file path="$PROJECT_DIR$/util/org/ralasafe/util/DBUtil.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548468" ignored="false" />
-    <file path="$PROJECT_DIR$/util/org/ralasafe/util/I18N.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548468" ignored="false" />
-    <file path="$PROJECT_DIR$/util/org/ralasafe/util/IOUtil.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548468" ignored="false" />
-    <file path="$PROJECT_DIR$/orm/org/ralasafe/db/WhereElementUtil.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548468" ignored="false" />
-    <file path="$PROJECT_DIR$/util/org/ralasafe/util/ExpressionFormatter.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109548468" ignored="false" />
-    <file path="/Factory.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380109988201" ignored="false" />
+    <file path="/Factory.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380188102936" ignored="false" />
+    <file path="/login.jsp" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380176619444" ignored="false" />
+    <file path="/main.jsp" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380177031570" ignored="false" />
+    <file path="/Application.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380164727260" ignored="false" />
+    <file path="/Privilege.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380165837041" ignored="false" />
+    <file path="/UrlAclFilter.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380165974227" ignored="false" />
+    <file path="/employee.jsp" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380177288773" ignored="false" />
+    <file path="/CustomizedWhere.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380177781000" ignored="false" />
+    <file path="/ApplicationManager.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380177973906" ignored="false" />
+    <file path="/ApplicationManagerImpl.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380180426397" ignored="false" />
+    <file path="/Table.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380178052891" ignored="false" />
+    <file path="/EntitleManagerImpl.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380178821407" ignored="false" />
+    <file path="/EntitleManager.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380178766976" ignored="false" />
+    <file path="/TableNewer.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380179794143" ignored="false" />
+    <file path="/DecisionEntitlement.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380179334592" ignored="false" />
+    <file path="/Ralasafe.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380180221648" ignored="false" />
+    <file path="/ApplicationUserType.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380180631566" ignored="false" />
+    <file path="/UserTypeInstallAction.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380184958925" ignored="false" />
+    <file path="/UserTypeManagerImpl.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380189491296" ignored="false" />
+    <file path="/UserTypeManager.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380181525004" ignored="false" />
+    <file path="/index.jsp" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380181990654" ignored="false" />
+    <file path="/UserMetadata.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380182994357" ignored="false" />
+    <file path="/build.xml" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380186880792" ignored="false" />
+    <file path="/Util.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380188315670" ignored="false" />
+    <file path="/PrivilegeManager.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380188731911" ignored="false" />
+    <file path="$PROJECT_DIR$/build/javadoc/org/ralasafe/privilege/Privilege.html" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380188907746" ignored="false" />
+    <file path="/WebUtil.java" changelist="09314fd5-ada6-4012-889a-d7302645312f" time="1380189366160" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,6 +159,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="Commander">
+    <leftPanel />
+    <rightPanel />
+    <splitter proportion="0.5" />
+  </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -225,78 +217,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="RoleManager.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/org/ralasafe/privilege/RoleManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="0" selection-start="333" selection-end="333" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserRole.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/org/ralasafe/privilege/UserRole.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="5" selection-start="388" selection-end="388" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RolePrivilege.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/org/ralasafe/privilege/RolePrivilege.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="5" selection-start="389" selection-end="389" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserRoleManager.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/org/ralasafe/privilege/UserRoleManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="4" selection-start="541" selection-end="541" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ApplicationManagerImpl.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/org/ralasafe/application/ApplicationManagerImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="11" selection-start="1888" selection-end="1888" vertical-scroll-proportion="-10.92">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Ralasafe.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/for-client-interface/org/ralasafe/Ralasafe.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="58" selection-start="1667" selection-end="1667" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EntitleManagerImpl.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/entitlement/org/ralasafe/entitle/EntitleManagerImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="20" selection-start="2062" selection-end="2062" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Factory.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/for-client-interface/org/ralasafe/Factory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="141" column="52" selection-start="5580" selection-end="5580" vertical-scroll-proportion="0.58037823">
+            <state line="98" column="30" selection-start="2991" selection-end="2991" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -308,16 +232,55 @@
       <file leaf-file-name="EntitleManager.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/entitlement/org/ralasafe/entitle/EntitleManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="17" selection-start="393" selection-end="393" vertical-scroll-proportion="0.0">
+            <state line="18" column="0" selection-start="421" selection-end="421" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Table.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/orm/org/ralasafe/db/Table.java">
+      <file leaf-file-name="web.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/web.xml">
+          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="34" selection-start="703" selection-end="703" vertical-scroll-proportion="0.0">
+            <state line="9" column="51" selection-start="441" selection-end="441" vertical-scroll-proportion="8.038462">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
+            <state />
+          </provider>
+          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="actions.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/ralasafe/actions.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="46" selection-start="1073" selection-end="1073" vertical-scroll-proportion="-19.52">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserMngAction.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/org/ralasafe/servlet/UserMngAction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="36" column="0" selection-start="1227" selection-end="1227" vertical-scroll-proportion="-0.2893726">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Query.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/orm/org/ralasafe/db/sql/Query.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="13" selection-start="773" selection-end="773" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -333,31 +296,31 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/WebContent/WEB-INF/ralasafe/actions.xml" />
-        <option value="$PROJECT_DIR$/client/org/ralasafe/servlet/Action.java" />
-        <option value="$PROJECT_DIR$/client/org/ralasafe/servlet/ActionParser.java" />
-        <option value="$PROJECT_DIR$/constants-and-commons/org/ralasafe/SystemConstant.java" />
-        <option value="$PROJECT_DIR$/WebContent/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/client/org/ralasafe/servlet/RalasafeController.java" />
-        <option value="$PROJECT_DIR$/util/org/ralasafe/util/Startup.java" />
-        <option value="$PROJECT_DIR$/orm/org/ralasafe/db/DataSourceHelper.java" />
-        <option value="$PROJECT_DIR$/orm/org/ralasafe/db/DataSourceProviderDbcpImpl.java" />
-        <option value="$PROJECT_DIR$/orm/org/ralasafe/db/DBPower.java" />
-        <option value="$PROJECT_DIR$/util/org/ralasafe/encrypt/Encrypt.java" />
-        <option value="$PROJECT_DIR$/WebContent/ralasafe/demo/login.jsp" />
-        <option value="$PROJECT_DIR$/client/org/ralasafe/webFilter/LoginFilter.java" />
-        <option value="$PROJECT_DIR$/client/org/ralasafe/webFilter/UrlAclFilter.java" />
         <option value="$PROJECT_DIR$/client/org/ralasafe/application/ApplicationManagerImpl.java" />
+        <option value="$PROJECT_DIR$/WebContent/ralasafe/userType/index.jsp" />
+        <option value="$PROJECT_DIR$/user/org/ralasafe/metadata/user/UserMetadata.java" />
+        <option value="$PROJECT_DIR$/client/org/ralasafe/servlet/UserTypeInstallAction.java" />
+        <option value="$PROJECT_DIR$/build.xml" />
         <option value="$PROJECT_DIR$/for-client-interface/org/ralasafe/Factory.java" />
+        <option value="$PROJECT_DIR$/util/org/ralasafe/util/Util.java" />
+        <option value="$PROJECT_DIR$/for-client-interface/org/ralasafe/Ralasafe.java" />
+        <option value="$PROJECT_DIR$/entitlement/org/ralasafe/entitle/EntitleManagerImpl.java" />
+        <option value="$PROJECT_DIR$/client/org/ralasafe/privilege/PrivilegeManager.java" />
+        <option value="$PROJECT_DIR$/user/org/ralasafe/user/UserManager.java" />
+        <option value="$PROJECT_DIR$/client/org/ralasafe/servlet/WebUtil.java" />
+        <option value="$PROJECT_DIR$/client/org/ralasafe/userType/UserTypeManagerImpl.java" />
+        <option value="$PROJECT_DIR$/orm/org/ralasafe/db/DBPower.java" />
+        <option value="$PROJECT_DIR$/entitlement/org/ralasafe/entitle/EntitleManager.java" />
+        <option value="$PROJECT_DIR$/client/org/ralasafe/servlet/UserMngAction.java" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="-2" />
+    <option name="y" value="47" />
+    <option name="width" value="1380" />
+    <option name="height" value="969" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -421,6 +384,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -453,6 +417,54 @@
               <option name="myItemId" value="xml(mysql)" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ralasafe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="userType" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ralasafe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ralasafe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xml(mysql)" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ralasafe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ralasafe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ralasafe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xml(mysql)" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ralasafe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="businessData" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -465,6 +477,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="WebContent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ralasafe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ralasafe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebContent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ralasafe" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -523,6 +561,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ralasafe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ralasafe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ralasafe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ralasafe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="encrypt" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -590,7 +654,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ralasafe" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -604,11 +672,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="group" />
+              <option name="myItemId" value="ralasafe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -623,6 +695,52 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="sql" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ralasafe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ralasafe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="orm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ralasafe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ralasafe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ralasafe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ralasafe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -717,14 +835,6 @@
               <option name="myItemId" value="client" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ralasafe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="privilege" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -736,7 +846,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
+              <option name="myItemId" value="build" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -753,10 +863,13 @@
               <option name="myItemId" value="build" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -766,16 +879,16 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="options.lastSelected" value="preferences.sourceCode.General" />
-    <property name="last_opened_file_path" value="E:/ralasafe_lib/servlet" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/test" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="MemberChooser.showClasses" value="true" />
     <property name="FullScreen" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -784,6 +897,11 @@
     <option name="myDjangoConsoleState">
       <PyConsoleSettings />
     </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\ralasafe\lib\test" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -798,6 +916,19 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -826,19 +957,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -893,15 +1011,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
+    <frame x="-2" y="47" width="1380" height="969" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960895" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2970297" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.05842185" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960895" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -915,12 +1033,12 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19850586" sideWeight="0.6703911" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26327768" sideWeight="0.7029703" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -987,97 +1105,56 @@
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
+    <buildFile url="file://$PROJECT_DIR$/build.xml">
+      <expanded value="true" />
+    </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/util/org/ralasafe/util/StringUtil.java">
+    <entry file="file://$PROJECT_DIR$/orm/org/ralasafe/db/TableCreator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="129" column="13" selection-start="3230" selection-end="3230" vertical-scroll-proportion="0.0">
+        <state line="9" column="22" selection-start="291" selection-end="291" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/org/ralasafe/application/Application.java">
+    <entry file="file://$PROJECT_DIR$/util/org/ralasafe/util/IOUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="13" selection-start="316" selection-end="316" vertical-scroll-proportion="0.0">
+        <state line="14" column="13" selection-start="374" selection-end="374" vertical-scroll-proportion="-0.2650448">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/org/ralasafe/application/ApplicationManager.java">
+    <entry file="file://$PROJECT_DIR$/util/org/ralasafe/util/Startup.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="60" selection-start="655" selection-end="655" vertical-scroll-proportion="0.0">
+        <state line="16" column="13" selection-start="464" selection-end="464" vertical-scroll-proportion="0.121638924">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/org/ralasafe/privilege/Privilege.java">
+    <entry file="file://$PROJECT_DIR$/util/org/ralasafe/util/DBUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="55" selection-start="1105" selection-end="1105" vertical-scroll-proportion="0.0">
+        <state line="30" column="25" selection-start="1000" selection-end="1000" vertical-scroll-proportion="-1.3380282">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/org/ralasafe/privilege/Role.java">
+    <entry file="file://$PROJECT_DIR$/orm/org/ralasafe/db/TableDeletor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="31" selection-start="299" selection-end="299" vertical-scroll-proportion="0.0">
+        <state line="18" column="19" selection-start="419" selection-end="419" vertical-scroll-proportion="0.3162612">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/org/ralasafe/privilege/RoleManagerImpl.java">
+    <entry file="file://$PROJECT_DIR$/orm/org/ralasafe/db/Type.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="13" selection-start="914" selection-end="914" vertical-scroll-proportion="0.0">
+        <state line="19" column="5" selection-start="512" selection-end="512" vertical-scroll-proportion="0.26760563">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/org/ralasafe/privilege/RoleManager.java">
+    <entry file="file://$PROJECT_DIR$/client/org/ralasafe/userType/UserTypeManagerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="333" selection-end="333" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/org/ralasafe/privilege/UserRole.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="5" selection-start="388" selection-end="388" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/org/ralasafe/privilege/RolePrivilege.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="5" selection-start="389" selection-end="389" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/org/ralasafe/privilege/UserRoleManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="4" selection-start="541" selection-end="541" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/orm/org/ralasafe/db/Table.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="34" selection-start="703" selection-end="703" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/entitlement/org/ralasafe/entitle/EntitleManagerImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="20" selection-start="2062" selection-end="2062" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/org/ralasafe/application/ApplicationManagerImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="11" selection-start="1888" selection-end="1888" vertical-scroll-proportion="-10.92">
+        <state line="115" column="62" selection-start="4716" selection-end="4716" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
@@ -1085,23 +1162,77 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/user/org/ralasafe/adapter/user/UserComplexTableAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="13" selection-start="745" selection-end="745" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/org/ralasafe/adapter/user/SelectConditionAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="50" selection-start="535" selection-end="535" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orm/org/ralasafe/db/DBPower.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="10" selection-start="1752" selection-end="1752" vertical-scroll-proportion="-5.3764405">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/entitlement/org/ralasafe/entitle/EntitleManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="17" selection-start="393" selection-end="393" vertical-scroll-proportion="0.0">
+        <state line="18" column="0" selection-start="421" selection-end="421" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/for-client-interface/org/ralasafe/Ralasafe.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="58" selection-start="1667" selection-end="1667" vertical-scroll-proportion="0.0">
+        <state line="98" column="30" selection-start="2991" selection-end="2991" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/web.xml">
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="51" selection-start="441" selection-end="441" vertical-scroll-proportion="8.038462">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
+        <state />
+      </provider>
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/ralasafe/actions.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="46" selection-start="1073" selection-end="1073" vertical-scroll-proportion="-19.52">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/for-client-interface/org/ralasafe/Factory.java">
+    <entry file="file://$PROJECT_DIR$/orm/org/ralasafe/db/sql/Query.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="141" column="52" selection-start="5580" selection-end="5580" vertical-scroll-proportion="0.58037823">
+        <state line="24" column="13" selection-start="773" selection-end="773" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/org/ralasafe/servlet/UserMngAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="0" selection-start="1227" selection-end="1227" vertical-scroll-proportion="-0.2893726">
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />

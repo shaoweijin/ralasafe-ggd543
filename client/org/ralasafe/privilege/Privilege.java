@@ -15,8 +15,10 @@ import org.ralasafe.group.Node;
  * Privilege be divided into two categories: BUSINESS_PRIVILEGE and NON_ROLE_PRIVILEGE.
  * BUSINESS_PRIVILEGE is a normal privilege as everyone knows, like update bill.
  * NON_ROLE_PRIVILEGE is privilege for some little things, like a combo box of web page.
- * Unlike BUSINESS_PRIVILEGE, it needn't check function-level privilege of the combo box.
+ * Unlike BUSINESS_PRIVILEGE, it needn't check function-level privilege of the combo box. *
  * </p>
+ *
+ * 映射ralasafe_privilege表的类
  */
 public class Privilege extends Node {
 	public static final int BUSINESS_PRIVILEGE_TREE_ROOT_ID = 0;

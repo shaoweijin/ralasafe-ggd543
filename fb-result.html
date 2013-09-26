@@ -1,0 +1,550 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>FindBugs Report</title>
+<style type="text/css">
+		.tablerow0 {
+			background: #EEEEEE;
+		}
+
+		.tablerow1 {
+			background: white;
+		}
+
+		.detailrow0 {
+			background: #EEEEEE;
+		}
+
+		.detailrow1 {
+			background: white;
+		}
+
+		.tableheader {
+			background: #b9b9fe;
+			font-size: larger;
+		}
+
+		.tablerow0:hover, .tablerow1:hover {
+			background: #aaffaa;
+		}
+
+		.priority-1 {
+		    color: red;
+		    font-weight: bold;
+		}
+		.priority-2 {
+		    color: orange;
+		    font-weight: bold;
+		}
+		.priority-3 {
+		    color: green;
+		    font-weight: bold;
+		}
+		.priority-4 {
+		    color: blue;
+		    font-weight: bold;
+		}
+		</style>
+<script type="text/javascript">
+			function toggleRow(elid) {
+				if (document.getElementById) {
+					element = document.getElementById(elid);
+					if (element) {
+						if (element.style.display == 'none') {
+							element.style.display = 'block';
+							//window.status = 'Toggle on!';
+						} else {
+							element.style.display = 'none';
+							//window.status = 'Toggle off!';
+						}
+					}
+				}
+			}
+		</script>
+</head>
+<body>
+<h1>
+<a href="http://findbugs.sourceforge.net">FindBugs</a> Report</h1>
+<h2>Project Information</h2>
+<p>Project: 
+		</p>
+<p>FindBugs version: 2.0.2</p>
+<p>Code analyzed:</p>
+<ul>
+<li>E:\ralasafe\build\lib\ralasafe-1.2-v20130926.jar</li>
+</ul>
+<p>
+<br/>
+<br/>
+</p>
+<h2>Metrics</h2>
+<p>26746 lines of code analyzed,
+	in 608 classes, 
+	in 22 packages.</p>
+<table width="500" cellpadding="5" cellspacing="2">
+<tr class="tableheader">
+<th align="left">Metric</th>
+<th align="right">Total</th>
+<th align="right">Density*</th>
+</tr>
+<tr class="tablerow0">
+<td>High Priority Warnings</td>
+<td align="right">6</td>
+<td align="right">0.22</td>
+</tr>
+<tr class="tablerow1">
+<td>Medium Priority Warnings</td>
+<td align="right">11</td>
+<td align="right">0.41</td>
+</tr>
+<tr class="$totalClass">
+<td>
+<b>Total Warnings</b>
+</td>
+<td align="right">
+<b>17</b>
+</td>
+<td align="right">
+<b>0.64</b>
+</td>
+</tr>
+</table>
+<p>
+<i>(* Defects per Thousand lines of non-commenting source statements)</i>
+</p>
+<p>
+<br/>
+<br/>
+</p>
+<h2>Contents</h2>
+<ul>
+<li>
+<a href="#Warnings_BAD_PRACTICE">Bad practice Warnings</a>
+</li>
+<li>
+<a href="#Warnings_CORRECTNESS">Correctness Warnings</a>
+</li>
+<li>
+<a href="#Warnings_SECURITY">Security Warnings</a>
+</li>
+<li>
+<a href="#Details">Details</a>
+</li>
+</ul>
+<h1>Summary</h1>
+<table width="500" cellpadding="5" cellspacing="2">
+<tr class="tableheader">
+<th align="left">Warning Type</th>
+<th align="right">Number</th>
+</tr>
+<tr class="tablerow0">
+<td>
+<a href="#Warnings_BAD_PRACTICE">Bad practice Warnings</a>
+</td>
+<td align="right">5</td>
+</tr>
+<tr class="tablerow1">
+<td>
+<a href="#Warnings_CORRECTNESS">Correctness Warnings</a>
+</td>
+<td align="right">11</td>
+</tr>
+<tr class="tablerow0">
+<td>
+<a href="#Warnings_SECURITY">Security Warnings</a>
+</td>
+<td align="right">1</td>
+</tr>
+<tr class="tablerow1">
+<td>
+<b>Total</b>
+</td>
+<td align="right">
+<b>17</b>
+</td>
+</tr>
+</table>
+<h1>Warnings</h1>
+<p>Click on a warning row to see full context information.</p>
+<h2>
+<a name="Warnings_BAD_PRACTICE">Bad practice Warnings</a>
+</h2>
+<table class="warningtable" width="100%" cellspacing="0">
+<tr class="tableheader">
+<th align="left">Code</th>
+<th align="left">Warning</th>
+</tr>
+<tr class="tablerow1" onclick="toggleRow('N66769');">
+<td>
+<span class="priority-1">DE</span>
+</td>
+<td>org.ralasafe.servlet.QueryDesignHandler.changeDataSource(String) might ignore java.lang.Exception</td>
+</tr>
+<tr class="detailrow1">
+<td/>
+<td>
+<p id="N66769" style="display: none;">
+<a href="#DE_MIGHT_IGNORE">Bug type DE_MIGHT_IGNORE (click for details)</a>
+<br/>In class org.ralasafe.servlet.QueryDesignHandler<br/>In method org.ralasafe.servlet.QueryDesignHandler.changeDataSource(String)<br/>Exception class java.lang.Exception<br/>At QueryDesignHandler.java:[line 201]<br/>At QueryDesignHandler.java:[line 201]</p>
+</td>
+</tr>
+<tr class="tablerow0" onclick="toggleRow('N66086');">
+<td>
+<span class="priority-1">DMI</span>
+</td>
+<td>Random object created and used only once in org.ralasafe.entitle.BackupManagerImpl.importBackup(Connection, Backup)</td>
+</tr>
+<tr class="detailrow0">
+<td/>
+<td>
+<p id="N66086" style="display: none;">
+<a href="#DMI_RANDOM_USED_ONLY_ONCE">Bug type DMI_RANDOM_USED_ONLY_ONCE (click for details)</a>
+<br/>In class org.ralasafe.entitle.BackupManagerImpl<br/>In method org.ralasafe.entitle.BackupManagerImpl.importBackup(Connection, Backup)<br/>Called method java.util.Random.nextLong()<br/>At BackupManagerImpl.java:[line 110]</p>
+</td>
+</tr>
+<tr class="tablerow1" onclick="toggleRow('N66713');">
+<td>
+<span class="priority-1">HE</span>
+</td>
+<td>org.ralasafe.privilege.Privilege defines equals and uses Object.hashCode()</td>
+</tr>
+<tr class="detailrow1">
+<td/>
+<td>
+<p id="N66713" style="display: none;">
+<a href="#HE_EQUALS_USE_HASHCODE">Bug type HE_EQUALS_USE_HASHCODE (click for details)</a>
+<br/>In class org.ralasafe.privilege.Privilege<br/>In method org.ralasafe.privilege.Privilege.equals(Object)<br/>At Privilege.java:[lines 131-138]</p>
+</td>
+</tr>
+<tr class="tablerow0" onclick="toggleRow('N66913');">
+<td>
+<span class="priority-1">HE</span>
+</td>
+<td>org.ralasafe.user.User defines equals and uses Object.hashCode()</td>
+</tr>
+<tr class="detailrow0">
+<td/>
+<td>
+<p id="N66913" style="display: none;">
+<a href="#HE_EQUALS_USE_HASHCODE">Bug type HE_EQUALS_USE_HASHCODE (click for details)</a>
+<br/>In class org.ralasafe.user.User<br/>In method org.ralasafe.user.User.equals(Object)<br/>At User.java:[lines 82-106]</p>
+</td>
+</tr>
+<tr class="tablerow1" onclick="toggleRow('N65564');">
+<td>
+<span class="priority-1">J2EE</span>
+</td>
+<td>Store of non serializable org.ralasafe.user.User into HttpSession in org.ralasafe.WebRalasafe.setCurrentUser(HttpServletRequest, User)</td>
+</tr>
+<tr class="detailrow1">
+<td/>
+<td>
+<p id="N65564" style="display: none;">
+<a href="#J2EE_STORE_OF_NON_SERIALIZABLE_OBJECT_INTO_SESSION">Bug type J2EE_STORE_OF_NON_SERIALIZABLE_OBJECT_INTO_SESSION (click for details)</a>
+<br/>In class org.ralasafe.WebRalasafe<br/>In method org.ralasafe.WebRalasafe.setCurrentUser(HttpServletRequest, User)<br/>Actual type org.ralasafe.user.User<br/>At WebRalasafe.java:[line 298]</p>
+</td>
+</tr>
+</table>
+<h2>
+<a name="Warnings_CORRECTNESS">Correctness Warnings</a>
+</h2>
+<table class="warningtable" width="100%" cellspacing="0">
+<tr class="tableheader">
+<th align="left">Code</th>
+<th align="left">Warning</th>
+</tr>
+<tr class="tablerow1" onclick="toggleRow('N65690');">
+<td>
+<span class="priority-2">NP</span>
+</td>
+<td>Possible null pointer dereference of columns in org.ralasafe.db.sql.Query.getData(List)</td>
+</tr>
+<tr class="detailrow1">
+<td/>
+<td>
+<p id="N65690" style="display: none;">
+<a href="#NP_NULL_ON_SOME_PATH">Bug type NP_NULL_ON_SOME_PATH (click for details)</a>
+<br/>In class org.ralasafe.db.sql.Query<br/>In method org.ralasafe.db.sql.Query.getData(List)<br/>Value loaded from columns<br/>Dereferenced at Query.java:[line 612]<br/>Null value at Query.java:[line 601]<br/>Known null at Query.java:[line 608]</p>
+</td>
+</tr>
+<tr class="tablerow0" onclick="toggleRow('N65778');">
+<td>
+<span class="priority-2">NP</span>
+</td>
+<td>Possible null pointer dereference of columns in org.ralasafe.db.sql.Query.getProperties()</td>
+</tr>
+<tr class="detailrow0">
+<td/>
+<td>
+<p id="N65778" style="display: none;">
+<a href="#NP_NULL_ON_SOME_PATH">Bug type NP_NULL_ON_SOME_PATH (click for details)</a>
+<br/>In class org.ralasafe.db.sql.Query<br/>In method org.ralasafe.db.sql.Query.getProperties()<br/>Value loaded from columns<br/>Dereferenced at Query.java:[line 640]<br/>Null value at Query.java:[line 629]<br/>Known null at Query.java:[line 636]</p>
+</td>
+</tr>
+<tr class="tablerow1" onclick="toggleRow('N65866');">
+<td>
+<span class="priority-2">NP</span>
+</td>
+<td>Null passed for nonnull parameter of getResultSet(User, Map, PreparedStatement) in org.ralasafe.db.sql.Query.execute(Connection, User, Map)</td>
+</tr>
+<tr class="detailrow1">
+<td/>
+<td>
+<p id="N65866" style="display: none;">
+<a href="#NP_NULL_PARAM_DEREF">Bug type NP_NULL_PARAM_DEREF (click for details)</a>
+<br/>In class org.ralasafe.db.sql.Query<br/>In method org.ralasafe.db.sql.Query.execute(Connection, User, Map)<br/>Called method org.ralasafe.db.sql.Query.getResultSet(User, Map, PreparedStatement)<br/>Argument 3 might be null but must not be null<br/>Value loaded from pstmt<br/>Method invoked at Query.java:[line 337]<br/>Null value at Query.java:[line 329]<br/>Known null at Query.java:[line 334]</p>
+</td>
+</tr>
+<tr class="tablerow0" onclick="toggleRow('N65976');">
+<td>
+<span class="priority-2">NP</span>
+</td>
+<td>Null passed for nonnull parameter of getResultSet(User, Map, PreparedStatement) in org.ralasafe.db.sql.Query.execute(Connection, User, Map, int, int)</td>
+</tr>
+<tr class="detailrow0">
+<td/>
+<td>
+<p id="N65976" style="display: none;">
+<a href="#NP_NULL_PARAM_DEREF">Bug type NP_NULL_PARAM_DEREF (click for details)</a>
+<br/>In class org.ralasafe.db.sql.Query<br/>In method org.ralasafe.db.sql.Query.execute(Connection, User, Map, int, int)<br/>Called method org.ralasafe.db.sql.Query.getResultSet(User, Map, PreparedStatement)<br/>Argument 3 might be null but must not be null<br/>Value loaded from pstmt<br/>Method invoked at Query.java:[line 422]<br/>Null value at Query.java:[line 404]<br/>Known null at Query.java:[line 417]</p>
+</td>
+</tr>
+<tr class="tablerow1" onclick="toggleRow('N66158');">
+<td>
+<span class="priority-2">NP</span>
+</td>
+<td>conn is null guaranteed to be dereferenced in org.ralasafe.entitle.BusinessDataManagerImpl.installBusinessData(String, boolean) on exception path</td>
+</tr>
+<tr class="detailrow1">
+<td/>
+<td>
+<p id="N66158" style="display: none;">
+<a href="#NP_GUARANTEED_DEREF_ON_EXCEPTION_PATH">Bug type NP_GUARANTEED_DEREF_ON_EXCEPTION_PATH (click for details)</a>
+<br/>In class org.ralasafe.entitle.BusinessDataManagerImpl<br/>In method org.ralasafe.entitle.BusinessDataManagerImpl.installBusinessData(String, boolean)<br/>Value loaded from conn<br/>Dereferenced at BusinessDataManagerImpl.java:[line 187]<br/>Dereferenced at BusinessDataManagerImpl.java:[line 195]<br/>Null value at BusinessDataManagerImpl.java:[line 136]<br/>Known null at BusinessDataManagerImpl.java:[line 138]</p>
+</td>
+</tr>
+<tr class="tablerow0" onclick="toggleRow('N66267');">
+<td>
+<span class="priority-2">NP</span>
+</td>
+<td>Possible null pointer dereference of businessData in org.ralasafe.entitle.BusinessDataManagerImpl.deleteSingleBusinessData(int)</td>
+</tr>
+<tr class="detailrow0">
+<td/>
+<td>
+<p id="N66267" style="display: none;">
+<a href="#NP_NULL_ON_SOME_PATH">Bug type NP_NULL_ON_SOME_PATH (click for details)</a>
+<br/>In class org.ralasafe.entitle.BusinessDataManagerImpl<br/>In method org.ralasafe.entitle.BusinessDataManagerImpl.deleteSingleBusinessData(int)<br/>Value loaded from businessData<br/>Dereferenced at BusinessDataManagerImpl.java:[line 458]<br/>Known null at BusinessDataManagerImpl.java:[line 453]</p>
+</td>
+</tr>
+<tr class="tablerow1" onclick="toggleRow('N66343');">
+<td>
+<span class="priority-2">NP</span>
+</td>
+<td>conn is null guaranteed to be dereferenced in org.ralasafe.entitle.QueryManagerImpl.installQueries(String, boolean) on exception path</td>
+</tr>
+<tr class="detailrow1">
+<td/>
+<td>
+<p id="N66343" style="display: none;">
+<a href="#NP_GUARANTEED_DEREF_ON_EXCEPTION_PATH">Bug type NP_GUARANTEED_DEREF_ON_EXCEPTION_PATH (click for details)</a>
+<br/>In class org.ralasafe.entitle.QueryManagerImpl<br/>In method org.ralasafe.entitle.QueryManagerImpl.installQueries(String, boolean)<br/>Value loaded from conn<br/>Dereferenced at QueryManagerImpl.java:[line 219]<br/>Dereferenced at QueryManagerImpl.java:[line 211]<br/>Null value at QueryManagerImpl.java:[line 162]<br/>Known null at QueryManagerImpl.java:[line 164]</p>
+</td>
+</tr>
+<tr class="tablerow0" onclick="toggleRow('N66452');">
+<td>
+<span class="priority-2">NP</span>
+</td>
+<td>Possible null pointer dereference of query in org.ralasafe.entitle.QueryManagerImpl.deleteSingleQuery(int)</td>
+</tr>
+<tr class="detailrow0">
+<td/>
+<td>
+<p id="N66452" style="display: none;">
+<a href="#NP_NULL_ON_SOME_PATH">Bug type NP_NULL_ON_SOME_PATH (click for details)</a>
+<br/>In class org.ralasafe.entitle.QueryManagerImpl<br/>In method org.ralasafe.entitle.QueryManagerImpl.deleteSingleQuery(int)<br/>Value loaded from query<br/>Dereferenced at QueryManagerImpl.java:[line 438]<br/>Known null at QueryManagerImpl.java:[line 433]</p>
+</td>
+</tr>
+<tr class="tablerow1" onclick="toggleRow('N66528');">
+<td>
+<span class="priority-2">NP</span>
+</td>
+<td>conn is null guaranteed to be dereferenced in org.ralasafe.entitle.UserCategoryManagerImpl.installCategories(String, boolean) on exception path</td>
+</tr>
+<tr class="detailrow1">
+<td/>
+<td>
+<p id="N66528" style="display: none;">
+<a href="#NP_GUARANTEED_DEREF_ON_EXCEPTION_PATH">Bug type NP_GUARANTEED_DEREF_ON_EXCEPTION_PATH (click for details)</a>
+<br/>In class org.ralasafe.entitle.UserCategoryManagerImpl<br/>In method org.ralasafe.entitle.UserCategoryManagerImpl.installCategories(String, boolean)<br/>Value loaded from conn<br/>Dereferenced at UserCategoryManagerImpl.java:[line 211]<br/>Dereferenced at UserCategoryManagerImpl.java:[line 204]<br/>Null value at UserCategoryManagerImpl.java:[line 157]<br/>Known null at UserCategoryManagerImpl.java:[line 159]</p>
+</td>
+</tr>
+<tr class="tablerow0" onclick="toggleRow('N66637');">
+<td>
+<span class="priority-2">NP</span>
+</td>
+<td>Possible null pointer dereference of uc in org.ralasafe.entitle.UserCategoryManagerImpl.deleteSingleUserCategory(int)</td>
+</tr>
+<tr class="detailrow0">
+<td/>
+<td>
+<p id="N66637" style="display: none;">
+<a href="#NP_NULL_ON_SOME_PATH">Bug type NP_NULL_ON_SOME_PATH (click for details)</a>
+<br/>In class org.ralasafe.entitle.UserCategoryManagerImpl<br/>In method org.ralasafe.entitle.UserCategoryManagerImpl.deleteSingleUserCategory(int)<br/>Value loaded from uc<br/>Dereferenced at UserCategoryManagerImpl.java:[line 444]<br/>Known null at UserCategoryManagerImpl.java:[line 439]</p>
+</td>
+</tr>
+<tr class="tablerow1" onclick="toggleRow('N66850');">
+<td>
+<span class="priority-1">USELESS_STRING</span>
+</td>
+<td>Invocation of toString on assignRoleIds in org.ralasafe.servlet.UserRoleAction.doPost(HttpServletRequest, HttpServletResponse)</td>
+</tr>
+<tr class="detailrow1">
+<td/>
+<td>
+<p id="N66850" style="display: none;">
+<a href="#DMI_INVOKING_TOSTRING_ON_ARRAY">Bug type DMI_INVOKING_TOSTRING_ON_ARRAY (click for details)</a>
+<br/>In class org.ralasafe.servlet.UserRoleAction<br/>In method org.ralasafe.servlet.UserRoleAction.doPost(HttpServletRequest, HttpServletResponse)<br/>Local variable named assignRoleIds<br/>At UserRoleAction.java:[line 39]</p>
+</td>
+</tr>
+</table>
+<h2>
+<a name="Warnings_SECURITY">Security Warnings</a>
+</h2>
+<table class="warningtable" width="100%" cellspacing="0">
+<tr class="tableheader">
+<th align="left">Code</th>
+<th align="left">Warning</th>
+</tr>
+<tr class="tablerow1" onclick="toggleRow('N65634');">
+<td>
+<span class="priority-2">SQL</span>
+</td>
+<td>org.ralasafe.db.DBView.getTable(Connection, String, String, String) passes a nonconstant String to an execute method on an SQL statement</td>
+</tr>
+<tr class="detailrow1">
+<td/>
+<td>
+<p id="N65634" style="display: none;">
+<a href="#SQL_NONCONSTANT_STRING_PASSED_TO_EXECUTE">Bug type SQL_NONCONSTANT_STRING_PASSED_TO_EXECUTE (click for details)</a>
+<br/>In class org.ralasafe.db.DBView<br/>In method org.ralasafe.db.DBView.getTable(Connection, String, String, String)<br/>At DBView.java:[line 91]</p>
+</td>
+</tr>
+</table>
+<h1>
+<a name="Details">Details</a>
+</h1>
+<h2>
+<a name="DE_MIGHT_IGNORE">DE_MIGHT_IGNORE: Method might ignore exception</a>
+</h2>
+
+  <p> This method might ignore an exception.&nbsp; In general, exceptions
+  should be handled or reported in some way, or they should be thrown
+  out of the method.</p>
+
+    
+<h2>
+<a name="DMI_RANDOM_USED_ONLY_ONCE">DMI_RANDOM_USED_ONLY_ONCE: Random object created and used only once</a>
+</h2>
+
+<p> This code creates a java.util.Random object, uses it to generate one random number, and then discards
+the Random object. This produces mediocre quality random numbers and is inefficient.
+If possible, rewrite the code so that the Random object is created once and saved, and each time a new random number
+is required invoke a method on the existing Random object to obtain it.
+</p>
+
+<p>If it is important that the generated Random numbers not be guessable, you <em>must</em> not create a new Random for each random
+number; the values are too easily guessable. You should strongly consider using a java.security.SecureRandom instead
+(and avoid allocating a new SecureRandom for each random number needed).
+</p>
+
+    
+<h2>
+<a name="HE_EQUALS_USE_HASHCODE">HE_EQUALS_USE_HASHCODE: Class defines equals() and uses Object.hashCode()</a>
+</h2>
+
+  <p> This class overrides <code>equals(Object)</code>, but does not
+  override <code>hashCode()</code>, and inherits the implementation of
+  <code>hashCode()</code> from <code>java.lang.Object</code> (which returns
+  the identity hash code, an arbitrary value assigned to the object
+  by the VM).&nbsp; Therefore, the class is very likely to violate the
+  invariant that equal objects must have equal hashcodes.</p>
+
+<p>If you don't think instances of this class will ever be inserted into a HashMap/HashTable,
+the recommended <code>hashCode</code> implementation to use is:</p>
+<pre>public int hashCode() {
+  assert false : "hashCode not designed";
+  return 42; // any arbitrary constant will do
+  }</pre>
+
+    
+<h2>
+<a name="J2EE_STORE_OF_NON_SERIALIZABLE_OBJECT_INTO_SESSION">J2EE_STORE_OF_NON_SERIALIZABLE_OBJECT_INTO_SESSION: Store of non serializable object into HttpSession</a>
+</h2>
+
+<p>
+This code seems to be storing a non-serializable object into an HttpSession.
+If this session is passivated or migrated, an error will result.
+</p>
+
+    
+<h2>
+<a name="NP_NULL_PARAM_DEREF">NP_NULL_PARAM_DEREF: Method call passes null for nonnull parameter</a>
+</h2>
+      
+      <p>
+      This method call passes a null value for a nonnull method parameter.
+    Either the parameter is annotated as a parameter that should
+    always be nonnull, or analysis has shown that it will always be
+    dereferenced.
+      </p>
+      
+   
+<h2>
+<a name="NP_NULL_ON_SOME_PATH">NP_NULL_ON_SOME_PATH: Possible null pointer dereference</a>
+</h2>
+
+<p> There is a branch of statement that, <em>if executed,</em>  guarantees that
+a null value will be dereferenced, which
+would generate a <code>NullPointerException</code> when the code is executed.
+Of course, the problem might be that the branch or statement is infeasible and that
+the null pointer exception can't ever be executed; deciding that is beyond the ability of FindBugs.
+</p>
+
+    
+<h2>
+<a name="NP_GUARANTEED_DEREF_ON_EXCEPTION_PATH">NP_GUARANTEED_DEREF_ON_EXCEPTION_PATH: Value is null and guaranteed to be dereferenced on exception path</a>
+</h2>
+          
+              <p>
+              There is a statement or branch on an exception path
+                that if executed guarantees that
+              a value is null at this point, and that
+              value that is guaranteed to be dereferenced
+              (except on forward paths involving runtime exceptions).
+              </p>
+          
+      
+<h2>
+<a name="SQL_NONCONSTANT_STRING_PASSED_TO_EXECUTE">SQL_NONCONSTANT_STRING_PASSED_TO_EXECUTE: Nonconstant string passed to execute method on an SQL statement</a>
+</h2>
+
+  <p>The method invokes the execute method on an SQL statement with a String that seems
+to be dynamically generated. Consider using
+a prepared statement instead. It is more efficient and less vulnerable to
+SQL injection attacks.
+</p>
+
+    
+<h2>
+<a name="DMI_INVOKING_TOSTRING_ON_ARRAY">DMI_INVOKING_TOSTRING_ON_ARRAY: Invocation of toString on an array</a>
+</h2>
+
+<p>
+The code invokes toString on an array, which will generate a fairly useless result
+such as [C@16f0472. Consider using Arrays.toString to convert the array into a readable
+String that gives the contents of the array. See Programming Puzzlers, chapter 3, puzzle 12.
+</p>
+
+    </body>
+</html>

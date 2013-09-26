@@ -29,9 +29,14 @@ import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.*;
 
+/**
+ * {@link ApplicationManager}的默认实现类
+ */
 public class ApplicationManagerImpl implements ApplicationManager {
     private static Log logger = LogFactory.getLog(ApplicationManagerImpl.class);
-
+    /**
+     * 引用application表
+     */
     private Table table;
     private TableSelectorImpl selector;
     private TableSaverImpl saver;
@@ -66,8 +71,7 @@ public class ApplicationManagerImpl implements ApplicationManager {
         newer.setId(DBPower.getTableId(null, newer.getTableName()));
         table = newer.getTable();
         selector = new TableSelectorImpl();
-        selector
-                .setObjectNewer(new JavaBeanObjectNewer(newer.getMappingClass()));
+        selector.setObjectNewer(new JavaBeanObjectNewer(newer.getMappingClass()));
         saver = new TableSaverImpl();
         updator = new TableUpdatorImpl();
         deletor = new TableDeletorImpl();
@@ -136,8 +140,7 @@ public class ApplicationManagerImpl implements ApplicationManager {
         }
 
         Collection allApps = selector.select(null, null);
-        Collection allAppUserTypes = applicationUserTypeSelector.select(null,
-                null);
+        Collection allAppUserTypes = applicationUserTypeSelector.select(null, null);
 
         store.clear();
 
@@ -164,8 +167,7 @@ public class ApplicationManagerImpl implements ApplicationManager {
 
         // Already exist?
         if (store.keySet().contains(app.getName())) {
-            throw new EntityExistException("The name '" + app.getName()
-                    + "' already exists.");
+            throw new EntityExistException("The name '" + app.getName() + "' already exists.");
         }
 
         Connection conn = null;
@@ -428,8 +430,7 @@ public class ApplicationManagerImpl implements ApplicationManager {
 
             ApplicationUserType appUserType = new ApplicationUserType();
             appUserType.setAppName(name);
-            applicationUserTypeDeletor.delete(conn,
-                    appNameUserTypeTableWhereEmt, appUserType);
+            applicationUserTypeDeletor.delete(conn, appNameUserTypeTableWhereEmt, appUserType);
 
             Application hint = new Application();
             hint.setName(name);

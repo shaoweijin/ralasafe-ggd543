@@ -36,10 +36,12 @@ public class DBPower {
      */
     private static Map tableIdDsMap = new HashMap();
     /**
-     * key/value=datasourceName<String>/Map[key/value=tableName<String>/tableId<
-     * Integer>]
+     * key/value=datasourceName<String>/Map[key/value=tableName<String>/tableId<Integer>]
      */
     private static Map dsTableNameMap = new HashMap();
+    /**
+     * 表ID的下一个取值
+     */
     private static int tableIdIndex = 1;
     private static boolean started;
 
@@ -47,6 +49,10 @@ public class DBPower {
         return started;
     }
 
+    /**
+     * 初始化
+     * @param map
+     */
     public static void on(Map map) {
         assert map != null;
 
@@ -181,6 +187,12 @@ public class DBPower {
         System.out.println("**** Ralasafe datasource started successfully!");
     }
 
+    /**
+     * 获得当前表ID的下一个值
+     * @param dsName 数据源的名称
+     * @param tableName
+     * @return
+     */
     public static int getTableId(String dsName, String tableName) {
         if (StringUtil.isEmpty(dsName)) {
             dsName = defaultDsName;

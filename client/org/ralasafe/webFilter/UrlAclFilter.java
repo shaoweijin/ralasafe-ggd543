@@ -74,10 +74,7 @@ public class UrlAclFilter implements Filter {
         Collection pvlgs = pvlgMng.getLikelyPrivilegesByUrl(url);
 
         User user = WebRalasafe.getCurrentUser(httpReq);
-        Object userId = null;
-        if (user != null) {
-            userId = user.get(User.idFieldName);
-        }
+        Object userId = (user != null) ? user.get(User.idFieldName) : null;
 
         for (Iterator iter = pvlgs.iterator(); iter.hasNext(); ) {
             Privilege pvlg = (Privilege) iter.next();
@@ -109,8 +106,7 @@ public class UrlAclFilter implements Filter {
                     } else {
                         // go to deny screen
                         httpReq.getSession().setAttribute(GOTO_PAGE, gotoPage);
-                        httpResp.sendRedirect(httpReq.getContextPath()
-                                + denyPage);
+                        httpResp.sendRedirect(httpReq.getContextPath() + denyPage);
                         return;
                     }
                 }

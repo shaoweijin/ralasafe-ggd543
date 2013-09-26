@@ -8,6 +8,9 @@ import org.ralasafe.EntityExistException;
 
 import java.util.Collection;
 
+/**
+ * 管理applicationusertype表和usertype表的数据
+ */
 public interface UserTypeManager {
  
 	public abstract Collection getAllUserTypes();
